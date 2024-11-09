@@ -7,6 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-![Profile Picture](images/IMG_2175.HEIC)
+![Profile Picture](IMG_2175.HEIC)
 
 Hi!!
