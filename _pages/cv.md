@@ -28,15 +28,6 @@ Research experience
 * Profiling RNF146 Dysregulation in Autism Model Induced by Valproic Acid (Collaboration with Prof. Yong-Seok Lee, Seoul National University College of Medicine)
   * Performed proteomic analysis via mass spectrometry to identify differentially expressed proteins in VPA-exposed mice, emphasizing RNF146 upregulation and Wnt/β-catenin pathway dysregulation.
   * Investigated transcriptomic changes associated with Rnf146 overexpression, linking it to autism-associated behavioral impacts.
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
 Publications
 ======
@@ -50,12 +41,12 @@ Talks
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
-Teaching
+Skills
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Programming Languages
+  * C, R, Python
+* Operating Systems
+  * Unix/Linux
+* Data Analysis
+  * Single-cell RNA-seq, Transcriptomics, Proteomics, Epigenomics
+
