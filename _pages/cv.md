@@ -40,6 +40,19 @@ Publications
 * Liu Y*, Young D, Zheng X, Desai I, Park J, Huynh N, Kuo C, Clarke GS, Luo JXJ, Moghadami S, Rajamani KT, Mu X, Chu J, Kim S, Parr S, Tan L, An JY, Paredes M, Wu Z, Sanders SJ, Jin X+, Conserved and dynamic ESR1 signaling in developing cortex mediates early postnatal social behavior (Under Review, Science)
 
 * Kim S*, Kim H*, Porta Pelayo J*, Alvarez S*, Jang G, Kim J, Hoelscher VM, Calleja-Pérez B, Jung H, Yang Y, Lee HJ, Lee J, Kim S, Jiménez de la Peña M, Han AR, Lee DS, Ji S, Yu W, Kim HM, An JY, Oh WC, Kwon SK, Kim JY, Um JW, Fernández-Jaén A+, Ko J+, Bazedoxifene rescues sexually dimorphic autistic-like abnormalities in mice carrying a biallelic MDGA1 mutation (Under Review, Nature)
+
+Honors & Awards
+======
+* Best Paper Award, BIOINFO 2024 Annual Conference
+  * Korean Society for Bioinformatics
+* AOHUPO Poster Award, HUPO 2023 World Congress
+  * Human Protein Organization
+* Outstanding Paper Award (1st Prize), 2023 L-HOPE Academic Paper Contest
+  * BK21
+* BK21FOUR Graduate Student Research Scholarshi, 2023
+  * BK21
+* Excellent Poster Awards, ICKSMCB 2022 International Conference
+  * KSMCB  
   
 Talks
 ======
