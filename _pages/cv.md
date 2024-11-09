@@ -18,6 +18,8 @@ Education
 * B.S. in Biosystem and Biomedical Sciences, Korea University
   * March 2018 – February 2022 (GPA: 4.11 / 4.50)
 
+<br><br>
+
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
@@ -40,6 +42,8 @@ Publications
 
 * Kim S*, Kim H*, Porta Pelayo J*, Alvarez S*, Jang G, Kim J, Hoelscher VM, Calleja-Pérez B, Jung H, Yang Y, Lee HJ, Lee J, Kim S, Jiménez de la Peña M, Han AR, Lee DS, Ji S, Yu W, Kim HM, An JY, Oh WC, Kwon SK, Kim JY, Um JW, Fernández-Jaén A+, Ko J+, Bazedoxifene rescues sexually dimorphic autistic-like abnormalities in mice carrying a biallelic MDGA1 mutation (Under Review, Nature)
 
+<br><br>
+
 Honors & Awards
 ======
 * **Best Paper Award**, BIOINFO 2024 Annual Conference
@@ -53,7 +57,9 @@ Honors & Awards
 * **BK21FOUR Graduate Student Research Scholarship**
   * August 2022 - February 2024  
   * BK21
-  
+
+<br><br>
+
 Conference Presentations
 ======
   <ul>{% for post in site.talks reversed %}
@@ -77,7 +83,8 @@ Conference Presentations
 - ICKSMCB 2022: International Conference of Korean Society for Molecular and Cellular Biology  
   - *Poster*: Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation
 
-  
+<br><br>
+ 
 Skills
 ======
 * Programming Languages
