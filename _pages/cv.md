@@ -43,16 +43,17 @@ Publications
 
 Honors & Awards
 ======
-* Best Paper Award, BIOINFO 2024 Annual Conference
+* **Best Paper Award**, BIOINFO 2024 Annual Conference
   * Korean Society for Bioinformatics
-* AOHUPO Poster Award, HUPO 2023 World Congress
+* **AOHUPO Poster Award**, HUPO 2023 World Congress
   * Human Protein Organization
-* Outstanding Paper Award (1st Prize), 2023 L-HOPE Academic Paper Contest
+* **Outstanding Paper Award (1st Prize)**, 2023 L-HOPE Academic Paper Contest
   * BK21
-* BK21FOUR Graduate Student Research Scholarshi, 2023
+* **Excellent Poster Awards**, ICKSMCB 2022 International Conference
+  * KSMCB
+* **BK21FOUR Graduate Student Research Scholarship**
+  * August 2022 - February 2024  
   * BK21
-* Excellent Poster Awards, ICKSMCB 2022 International Conference
-  * KSMCB  
   
 Conference Presentations
 ======
@@ -62,19 +63,19 @@ Conference Presentations
 
 ## Poster Presentations (Selected)
 
-- **KSBNS-APSN 2024**: The 27th Annual Meeting of the Korean Society for Brain and Neural Sciences in conjunction with the 18th Biennial Meeting of the Asian-Pacific Society for Neurochemistry  
+- KSBNS-APSN 2024: The 27th Annual Meeting of the Korean Society for Brain and Neural Sciences in conjunction with the 18th Biennial Meeting of the Asian-Pacific Society for Neurochemistry  
   - *Poster*: An integrative single-cell atlas to explore the cellular and temporal specificity of neurological disorder genes during human brain development
 
-- **Keystone Symposia - Single-Cell Biology: Tissue Genomics, Technologies and Disease 2024**  
+- Keystone Symposia - Single-Cell Biology: Tissue Genomics, Technologies and Disease 2024 
   - *Poster*: Dysregulation of the Wnt/beta-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder
 
-- **HUPO (Human Proteome Organization) 2023 World Congress**  
+- HUPO (Human Proteome Organization) 2023 World Congress
   - *Poster*: Dysregulation of the Wnt/beta-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder
 
-- **The 19th KOGO (Korea Genome Organization) Winter Symposium 2023**  
+- The 19th KOGO (Korea Genome Organization) Winter Symposium 2023
   - *Poster*: Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation
 
-- **ICKSMCB 2022**: International Conference of Korean Society for Molecular and Cellular Biology  
+- ICKSMCB 2022: International Conference of Korean Society for Molecular and Cellular Biology  
   - *Poster*: Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation
 
   
