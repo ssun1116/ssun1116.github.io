@@ -10,10 +10,10 @@ redirect_from:
 {% include base_path %}
 
 ## Education
-* M.S. in Integrated Biomedical and Life Sciences, Korea University
+* **Master of Science**, Integrated Biomedical and Life Sciences, Korea University
   * March 2022 – August 2024
-  * Thesis: *Exploring Cellular and Temporal Specificity of Neurological Disorder Genes in Human Brain Development* (Advisor: Prof. Joon-Yong An)
-* B.S. in Biosystem and Biomedical Sciences, Korea University
+  * Thesis: "Exploring Cellular and Temporal Specificity of Neurological Disorder Genes in Human Brain Development" (*Advisor: Prof. Joon-Yong An*)
+* **Bachelor of Science**, Biosystem and Biomedical Sciences, Korea University
   * March 2018 – February 2022
 
 
@@ -52,19 +52,19 @@ redirect_from:
 ## Poster Presentations (Selected)
 
 - KSBNS-APSN 2024: The 27th Annual Meeting of the Korean Society for Brain and Neural Sciences in conjunction with the 18th Biennial Meeting of the Asian-Pacific Society for Neurochemistry  
-  - Poster: *An integrative single-cell atlas to explore the cellular and temporal specificity of neurological disorder genes during human brain development*
+  - Poster: "An integrative single-cell atlas to explore the cellular and temporal specificity of neurological disorder genes during human brain development"
 
 - Keystone Symposia - Single-Cell Biology: Tissue Genomics, Technologies and Disease 2024 
-  - Poster: *Dysregulation of the Wnt/beta-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder*
+  - Poster: "Dysregulation of the Wnt/beta-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder"
 
 - HUPO (Human Proteome Organization) 2023 World Congress
-  - Poster: *Dysregulation of the Wnt/beta-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder*
+  - Poster: "Dysregulation of the Wnt/beta-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder"
 
 - The 19th KOGO (Korea Genome Organization) Winter Symposium 2023
-  - Poster: *Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation*
+  - Poster: "Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation"
 
 - ICKSMCB 2022: International Conference of Korean Society for Molecular and Cellular Biology  
-  - Poster: *Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation*
+  - Poster: "Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation"
 
  
 ## Skills
