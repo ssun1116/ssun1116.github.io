@@ -8,5 +8,5 @@ venue: 'Experimental & Molecular Medicine'
 paperurl: 'https://ssun1116.github.io/files/paper1.pdf'
 ---
 
-This study presents a comprehensive single-cell atlas of the developing human brain, integrating data from 393,060 single cells across multiple developmental stages, from the fetal period to late adulthood. It highlights the temporal and spatial dynamics of disorder risk genes, such as those associated with autism and developmental delay, across neuronal and glial lineages. The findings provide valuable insights into the molecular mechanisms underlying brain development and its link to neurological disorders, offering a robust resource for future research in neurodevelopment and disease pathogenesis.
+This study introduces a single-cell atlas of the developing human brain, spanning 393,060 cells from fetal stages to adulthood. It reveals the temporal and spatial dynamics of disorder risk genes, providing insights into brain development and its connection to neurological disorders, and serves as a valuable resource for neurodevelopmental research.
 
