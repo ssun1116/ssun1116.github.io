@@ -1,14 +1,11 @@
 ---
-title: "Paper Title Number 3"
+title: "Dysregulation of the Wnt-β-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+permalink: '[https://doi.org/10.1038/s12276-024-01328-6](https://doi.org/10.1038/s12276-023-01065-2)'
+date: 2023-08-01
+venue: 'Experimental & Molecular Medicine'
+paperurl: 'https://ssun1116.github.io/files/paper2.pdf'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This study investigates the molecular mechanisms underlying autism spectrum disorder (ASD) using a valproic acid (VPA)-induced mouse model. High-resolution mass spectrometry-based proteomic analysis of the prefrontal cortex revealed significant dysregulation of the Wnt/β-catenin signaling pathway due to the upregulation of Rnf146, a key regulator of this pathway. Overexpression of Rnf146 in the prefrontal cortex impaired social behaviors in mice, increased excitatory synaptic transmission, and altered synaptic organization, providing insights into how environmental factors like prenatal VPA exposure contribute to ASD pathogenesis. These findings suggest Rnf146 and the Wnt/β-catenin pathway as potential targets for therapeutic intervention.
