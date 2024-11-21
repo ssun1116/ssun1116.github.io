@@ -9,13 +9,13 @@ redirect_from:
 
 ![Profile Picture](Landscape.png)
 
-The intricate process of brain development, driven by genetic interactions, shapes cognitive function and the onset of neurological disorders. 
-My research uses bioinformatics to map these genetic landscapes, focusing on how gene expression changes over time can reveal critical intervention points. 
-I aim to expand this work by integrating CRISPR-based functional genomics to directly manipulate and investigate the effects of risk genes in neurodevelopmental pathways.
+The intricate process of brain development, driven by genetic interactions, shapes cognitive function and, at times, leads to the risk of neurological disorders. I am interested in combining bioinformatics with neuroscience to map the genetic landscapes of the brain and explore how gene regulation influences neurodevelopmental pathways. My goal is to uncover the roles of risk genes and identify potential intervention points by applying CRISPR-based functional genomics and integrating isoform-level transcriptomics. I aim to advance our understanding of brain complexity and contribute to strategies for mitigating neurodevelopmental disorders.
 
 My research interests focus on:
 
-* Developing single-cell atlases to trace gene dynamics in brain development
-* Utilizing CRISPR technology to explore the functional roles of disorder-associated genes
+* Neurodevelopmental Processes and Neurological Disorders
+* Single-cell RNA Sequencing and Isoform-level RNA Biology
+* CRISPR-based Functional Genomics and Therapeutic Gene Inverventions
+* Human Brain Organoid Modeling and Advanced Neurodevelopmental Studies
 
 Contact: ssunrla16@gmail.com
