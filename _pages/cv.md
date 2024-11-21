@@ -19,9 +19,11 @@ redirect_from:
 
 
 ## Publications
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Kim S*, Lee J*, Koh IG, Ji J, Kim HJ, Kim E, Park J, Park JE, An JY+, An integrative single-cell atlas to explore the cellular and temporal specificity of neurological disorder genes during human brain development. Exp Mol Med. 2024;56(10):2271-2282. doi:[10.1038/s12276-024-01328-6.]([https://doi.org/10.1038/s12276-024-01328-6](https://www.nature.com/articles/s12276-024-01328-6))
+
+* Park G*, Jang WE*, Kim S*, Gonzales EL, Ji J, Choi S, Kim U, Park JH, Mohammad HB, Bang G, Kang M, Kim S, Jeon SJ, Kim JY, Kim KP, Shin CY+, An JY+, Kim MS+, Lee YS+, Dysregulation of the Wnt/β-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder. Exp Mol Med. 2023;55(9):1783-1794. doi:[10.1038/s12276-023-01065-2.]([https://doi.org/10.1038/s12276-024-01328-6](https://www.nature.com/articles/s12276-023-01065-2))
+
+* Park HR*, Shiva A*, Cumming P, Kim S, Kim S, Kee E, Leong A, Chowdhury S, Shawber C, Carvajal R, Thurston G, An JY, Lund AW, Yang HW, Kim M+, Angiopoietin-2-dependent spatial vascular destabilization promotes T-cell exclusion and limits immunotherapy in melanoma. Cancer Res. 2023;83(12):1968-1983. doi:[10.1158/0008-5472.CAN-22-2838.](https://aacrjournals.org/cancerres/article/83/12/1968/727168/Angiopoietin-2-Dependent-Spatial-Vascular) 
 
 ### In Revision
 * Song KJ*, Choi S, Kim K, Chang E, Park JS, Shim SB, Choi S, Heo YJ, An WJ, Yang DY, Cho KC, Ji W, Choi CM, Lee JC, Kim H, Yoo J, Ahn HS, Lee GH, Hwa C, Kim S, Kim K, Kim MS, Paek E, Jang SJ, Na S+, An JY+, Hwang HS+, Kim KP+, Proteogenomic Analysis Reveals Non-small Cell Lung Cancer Subtypes Predicting Chromosome Instability, and Tumor Microenvironment (In Press, Nature Communications)
@@ -58,19 +60,19 @@ redirect_from:
 ## Poster Presentations (Selected)
 
 - KSBNS-APSN 2024: The 27th Annual Meeting of the Korean Society for Brain and Neural Sciences in conjunction with the 18th Biennial Meeting of the Asian-Pacific Society for Neurochemistry  
-  - *Poster*: An integrative single-cell atlas to explore the cellular and temporal specificity of neurological disorder genes during human brain development
+  - Poster: *An integrative single-cell atlas to explore the cellular and temporal specificity of neurological disorder genes during human brain development*
 
 - Keystone Symposia - Single-Cell Biology: Tissue Genomics, Technologies and Disease 2024 
-  - *Poster*: Dysregulation of the Wnt/beta-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder
+  - Poster: *Dysregulation of the Wnt/beta-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder*
 
 - HUPO (Human Proteome Organization) 2023 World Congress
-  - *Poster*: Dysregulation of the Wnt/beta-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder
+  - Poster: *Dysregulation of the Wnt/beta-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder*
 
 - The 19th KOGO (Korea Genome Organization) Winter Symposium 2023
-  - *Poster*: Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation
+  - Poster: *Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation*
 
 - ICKSMCB 2022: International Conference of Korean Society for Molecular and Cellular Biology  
-  - *Poster*: Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation
+  - Poster: *Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation*
 
  
 ## Skills
