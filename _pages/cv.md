@@ -11,11 +11,10 @@ redirect_from:
 
 ## Education
 * M.S. in Integrated Biomedical and Life Sciences, Korea University
-  * March 2022 – August 2024 (GPA: 4.33 / 4.50)
-  * Thesis: *Exploring Cellular and Temporal Specificity of Neurological Disorder Genes in Human Brain Development*  
-  * Advisor: Prof. Joon-Yong An
+  * March 2022 – August 2024
+  * Thesis: *Exploring Cellular and Temporal Specificity of Neurological Disorder Genes in Human Brain Development* (Advisor: Prof. Joon-Yong An)
 * B.S. in Biosystem and Biomedical Sciences, Korea University
-  * March 2018 – February 2022 (GPA: 4.11 / 4.50)
+  * March 2018 – February 2022
 
 
 ## Publications
