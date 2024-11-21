@@ -8,5 +8,5 @@ venue: 'Cancer Research'
 paperurl: 'https://ssun1116.github.io/files/paper3.pdf'
 ---
 
-This study reveals the role of Angiopoietin-2 (ANGPT2) in promoting immune evasion in melanoma through vascular destabilization. Elevated ANGPT2 levels were associated with T-cell exclusion from tumor cores in both human and murine melanoma models. Targeting ANGPT2 via genetic or pharmacologic methods enhanced vascular integrity, facilitated CD8+ T-cell infiltration, and improved the efficacy of immune checkpoint therapies. These findings highlight ANGPT2 as a promising therapeutic target to overcome resistance in melanoma immunotherapy.
+This study identifies Angiopoietin-2 (ANGPT2) as a key driver of immune evasion in melanoma by destabilizing vasculature. High ANGPT2 levels were linked to T-cell exclusion, while targeting ANGPT2 improved vascular integrity, T-cell infiltration, and immunotherapy effectiveness, highlighting its potential as a therapeutic target.
 
