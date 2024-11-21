@@ -25,7 +25,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-## In Revision
+### In Revision
 * Song KJ*, Choi S, Kim K, Chang E, Park JS, Shim SB, Choi S, Heo YJ, An WJ, Yang DY, Cho KC, Ji W, Choi CM, Lee JC, Kim H, Yoo J, Ahn HS, Lee GH, Hwa C, Kim S, Kim K, Kim MS, Paek E, Jang SJ, Na S+, An JY+, Hwang HS+, Kim KP+, Proteogenomic Analysis Reveals Non-small Cell Lung Cancer Subtypes Predicting Chromosome Instability, and Tumor Microenvironment (In Press, Nature Communications)
 
 * Kim JP*, Cho M*, Kim C*, Lee H, Jang B, Jung SH, Kim Y, Koh IG, Kim S, Shin D, Lee EH, Lee JY, Jang H, Kim B, Ham HG, Kim B, Kim Y, Cho AH, Raj T, Kim HK, Na D, Seo SW+, An JY+, Won HH+, Whole genome sequencing analyses suggest novel genetic factors associated with Alzheimer’s disease and an additive model for risk liability (In Revision, Nature communications)
@@ -36,7 +36,7 @@ Publications
 
 * Jang D*, Hwa C, Oh J, Shin S, Lee SJ, Kim J, Lee SE, Yang Y, Kim D, Lee S, Jung HR, Oh Y, Kim K, Lee HS, Kim S, An JY+, Cho SY+, RNA N6-methyladenosine-binding protein YTHDFs redundantly attenuate cancer immunity by downregulating IFN-γ signaling in gastric cancer (In Revision, Advanced Science)
 
-## Under Review
+### Under Review
 * Liu Y*, Young D, Zheng X, Desai I, Park J, Huynh N, Kuo C, Clarke GS, Luo JXJ, Moghadami S, Rajamani KT, Mu X, Chu J, Kim S, Parr S, Tan L, An JY, Paredes M, Wu Z, Sanders SJ, Jin X+, Conserved and dynamic ESR1 signaling in developing cortex mediates early postnatal social behavior (Under Review, Science)
 
 * Kim S*, Kim H*, Porta Pelayo J*, Alvarez S*, Jang G, Kim J, Hoelscher VM, Calleja-Pérez B, Jung H, Yang Y, Lee HJ, Lee J, Kim S, Jiménez de la Peña M, Han AR, Lee DS, Ji S, Yu W, Kim HM, An JY, Oh WC, Kwon SK, Kim JY, Um JW, Fernández-Jaén A+, Ko J+, Bazedoxifene rescues sexually dimorphic autistic-like abnormalities in mice carrying a biallelic MDGA1 mutation (Under Review, Nature)
@@ -44,18 +44,26 @@ Publications
 
 Honors & Awards
 ======
-* **Best Paper Award**, BIOINFO 2024 Annual Conference
+* Best Paper Award, *BIOINFO 2024 Annual Conference*
   * Korean Society for Bioinformatics
-* **AOHUPO Poster Award**, HUPO 2023 World Congress
+  
+* AOHUPO Poster Award, *HUPO 2023 World Congress*
   * Human Protein Organization
-* **Outstanding Paper Award (1st Prize)**, 2023 L-HOPE Academic Paper Contest
-  * BK21
-* **Excellent Poster Awards**, ICKSMCB 2022 International Conference
-  * KSMCB
-* **BK21FOUR Graduate Student Research Scholarship**
-  * August 2022 - February 2024  
-  * BK21
-
+ 
+* Outstanding Paper Award (1st Prize), *2023 L-HOPE Academic Paper Contest*
+  * BK21FOUR R&E Center for Learning Health Systems
+    
+* Excellent Poster Awards, *ICKSMCB 2022 International Conference*
+  * Korean Society for Molecular and Cellular Biology
+    
+* BK21FOUR Graduate Student Research Scholarship (August 2022 - February 2024)  
+  * BK21FOUR R&E Center for Learning Health Systems
+    
+* Outstanding Poster Award, *BIOINFO 2022 Annual Conference*
+  * Korean Society for Bioinformatics
+    
+* Scholarship for Bio-Scientists Career Exploration Program (2021)
+  * School of Biosystems and Biomedical Sciences, Korea University
 
 
 Conference Presentations
@@ -84,10 +92,11 @@ Conference Presentations
  
 Skills
 ======
+* Data Analysis
+  * Single-cell RNA-seq, Transcriptomics, Proteomics, Epigenomics
 * Programming Languages
   * C, R, Python
 * Operating Systems
   * Unix/Linux
-* Data Analysis
-  * Single-cell RNA-seq, Transcriptomics, Proteomics, Epigenomics
+
 
