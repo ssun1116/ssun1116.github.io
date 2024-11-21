@@ -9,8 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+## Education
 * M.S. in Integrated Biomedical and Life Sciences, Korea University
   * March 2022 – August 2024 (GPA: 4.33 / 4.50)
   * Thesis: *Exploring Cellular and Temporal Specificity of Neurological Disorder Genes in Human Brain Development*  
@@ -19,8 +18,7 @@ Education
   * March 2018 – February 2022 (GPA: 4.11 / 4.50)
 
 
-Publications
-======
+## Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
@@ -42,8 +40,7 @@ Publications
 * Kim S*, Kim H*, Porta Pelayo J*, Alvarez S*, Jang G, Kim J, Hoelscher VM, Calleja-Pérez B, Jung H, Yang Y, Lee HJ, Lee J, Kim S, Jiménez de la Peña M, Han AR, Lee DS, Ji S, Yu W, Kim HM, An JY, Oh WC, Kwon SK, Kim JY, Um JW, Fernández-Jaén A+, Ko J+, Bazedoxifene rescues sexually dimorphic autistic-like abnormalities in mice carrying a biallelic MDGA1 mutation (Under Review, Nature)
 
 
-Honors & Awards
-======
+## Honors & Awards
 * Best Paper Award, *BIOINFO 2024 Annual Conference*
   * Korean Society for Bioinformatics
   
@@ -66,8 +63,7 @@ Honors & Awards
   * School of Biosystems and Biomedical Sciences, Korea University
 
 
-Conference Presentations
-======
+## Conference Presentations
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
@@ -90,12 +86,13 @@ Conference Presentations
   - *Poster*: Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation
 
  
-Skills
-======
+## Skills
 * Data Analysis
   * Single-cell RNA-seq, Transcriptomics, Proteomics, Epigenomics
+ 
 * Programming Languages
   * C, R, Python
+    
 * Operating Systems
   * Unix/Linux
 
