@@ -17,8 +17,7 @@ redirect_from:
   * March 2018 – February 2022
 
 
-## Publications
-(\*co-first, <sup>+</sup>corresponding authors)
+## Publications <span style="font-size: 14px; font-weight: normal;">(*co-first, <sup>+</sup>corresponding authors)</span>
 
 * **<u>Kim S</u>**\*, Lee J\*, Koh IG, Ji J, Kim HJ, Kim E, Park J, Park JE, An JY<sup>+</sup>, An integrative single-cell atlas to explore the cellular and temporal specificity of neurological disorder genes during human brain development. Exp Mol Med. 2024;56(10):2271-2282. DOI: [10.1038/s12276-024-01328-6.](https://www.nature.com/articles/s12276-024-01328-6)
 * Park G\*, Jang WE\*, **<u>Kim S</u>**\*, Gonzales EL, Ji J, Choi S, Kim U, Park JH, Mohammad HB, Bang G, Kang M, Kim S, Jeon SJ, Kim JY, Kim KP, Shin CY<sup>+</sup>, An JY<sup>+</sup>, Kim MS<sup>+</sup>, Lee YS<sup>+</sup>, Dysregulation of the Wnt/β-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder. Exp Mol Med. 2023;55(9):1783-1794. DOI: [10.1038/s12276-023-01065-2.](https://www.nature.com/articles/s12276-023-01065-2)
