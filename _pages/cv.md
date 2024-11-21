@@ -35,13 +35,13 @@ redirect_from:
 
 
 ## Honors & Awards
-* Best Paper Award at BIOINFO 2024 Annual Conference, Korean Society for Bioinformatics
-* AOHUPO Poster Award at HUPO 2023 World Congress, Human Protein Organization
-* Outstanding Paper Award (1st Prize) at 2023 L-HOPE Academic Paper Contest, BK21FOUR R&E Center for Learning Health Systems  
-* Excellent Poster Awards at ICKSMCB 2022 International Conference, Korean Society for Molecular and Cellular Biology
-* Outstanding Poster Award at BIOINFO 2022 Annual Conference, Korean Society for Bioinformatics
-* BK21FOUR Graduate Student Research Scholarship (08.2022 - 02.2024), BK21FOUR R&E Center for Learning Health Systems  
-* Scholarship for Bio-Scientists Career Exploration Program (2021), School of Biosystems and Biomedical Sciences, Korea University
+* **Best Paper Award**, BIOINFO 2024 Annual Conference, Korean Society for Bioinformatics
+* **AOHUPO Poster Award**, HUPO 2023 World Congress, Human Protein Organization
+* **Outstanding Paper Award** (1st Prize), 2023 L-HOPE Academic Paper Contest, BK21FOUR R&E Center for Learning Health Systems  
+* **Excellent Poster Awards**, ICKSMCB 2022 International Conference, Korean Society for Molecular and Cellular Biology
+* **Outstanding Poster Award**, BIOINFO 2022 Annual Conference, Korean Society for Bioinformatics
+* **BK21FOUR Graduate Student Research Scholarship** (08.2022 - 02.2024), BK21FOUR R&E Center for Learning Health Systems  
+* **Scholarship for Bio-Scientists Career Exploration Program** (2021), School of Biosystems and Biomedical Sciences, Korea University
 
 
 ## Conference Presentations
