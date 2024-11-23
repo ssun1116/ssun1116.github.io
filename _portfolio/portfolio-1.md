@@ -1,6 +1,6 @@
 ---
 title: "Exploring the cellular and temporal specificity of neurological disorder risk genes in human brain development"
-excerpt: "Present a human brain single-cell atlas spanning all developmental stages, highlighting temporal and cellular-specific expression of 3,380 neurological disorder risk genes.<br/><img src='/images/KSBNS_poster_SYK.jpg'>"
+excerpt: "Present a human brain single-cell atlas spanning all developmental stages, highlighting temporal and cellular-specific expression of 3,380 neurological disorder risk genes.<br style='line-height: 2.5;'/><img src='/images/KSBNS_poster_SYK.jpg'>"
 collection: portfolio
 ---
 <br/>
