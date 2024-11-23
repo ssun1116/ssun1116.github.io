@@ -1,11 +1,8 @@
 ---
 title: "Single-Cell Atlas of Neurological Disorder Genes in Human Brain Development"
-excerpt: "<img src='/images/KSBNS_poster_SYK.jpg'>"
+excerpt: "Present a human brain single-cell atlas spanning all developmental stages, highlighting temporal and cellular-specific expression of 3,380 neurological disorder risk genes, including key findings on autism-related genes.<br/><img src='/images/KSBNS_poster_SYK.jpg'>"
 collection: portfolio
 ---
-
-- Title: An Integrative Single-Cell Atlas to Explore the Cellular and Temporal Specificity of Neurological Disorder Genes During Human Brain Development
-    - Summary: Present a human brain single-cell atlas spanning all developmental stages, highlighting temporal and cellular-specific expression of 3,380 neurological disorder risk genes, including key findings on autism-related genes.
 
 This poster presents a comprehensive single-cell atlas of the developing human brain, showcasing dynamic gene expression patterns across various developmental stages. Utilizing data from 393,060 cells and eight integrated datasets, the study highlights the cellular and temporal specificity of neurological disorder risk genes, including those associated with autism, schizophrenia, and other brain disorders.
 
