@@ -4,4 +4,5 @@ excerpt: "Short description of portfolio item number 1<br/><img src='/images/Pos
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+- Title: Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation
+    - Summary: Presented the use of single-cell analysis workflows (public dataset integration, gene regulatory network construction, and DEG analysis) to investigate dendritic cell differentiation. This work helped me build proficiency in single-cell RNA-seq analysis.
