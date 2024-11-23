@@ -46,7 +46,7 @@ redirect_from:
 
 
 ## Conference Presentations
-  <ul style="font-size: 20px;">{% for post in site.talks reversed %}
+  <ul style="font-size: 24px;">{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
 
