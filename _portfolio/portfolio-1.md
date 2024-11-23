@@ -1,7 +1,8 @@
 ---
-title: "Portfolio item number 1"
+title: "Single-Cell Atlas of Neurological Disorder Genes in Human Brain Development"
 excerpt: "<img src='/images/KSBNS_poster_SYK.jpg'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+- Title: An Integrative Single-Cell Atlas to Explore the Cellular and Temporal Specificity of Neurological Disorder Genes During Human Brain Development
+    - Summary: This poster presented a human brain single-cell atlas spanning all developmental stages, highlighting temporal and cellular-specific expression of 3,380 neurological disorder risk genes, including key findings on autism-related genes.
