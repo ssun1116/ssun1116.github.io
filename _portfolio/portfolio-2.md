@@ -1,6 +1,6 @@
 ---
 title: "Dysregulation of the Wnt/β-Catenin signaling pathway via Rnf146 upregulation in a VPA-induced omuse model of autism spectrum disorder"
-excerpt: "Present findings on how prenatal valproic acid exposure disrupts neurodevelopment via RNF146-driven Wnt/β-catenin pathway dysregulation in an autism mouse model.<br/><img src='/images/Poster_VPA_Keystone.jpg'>"
+excerpt: "Present findings on how prenatal valproic acid exposure disrupts neurodevelopment via RNF146-driven Wnt/β-catenin pathway dysregulation in an autism mouse model.<br/><br/><img src='/images/Poster_VPA_Keystone.jpg'>"
 collection: portfolio
 ---
 
