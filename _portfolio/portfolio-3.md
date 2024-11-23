@@ -1,5 +1,5 @@
 ---
-title: "Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation"
+title: "[Poster] Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation"
 excerpt: "Presented the use of single-cell analysis workflows (public dataset integration, gene regulatory network construction, and DEG analysis) to investigate dendritic cell differentiation.<br/><img src='/images/Poster_Myeloid_SYK.jpg' style='margin-top: 15px;'>"
 collection: portfolio
 ---
