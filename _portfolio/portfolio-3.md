@@ -1,5 +1,5 @@
 ---
-title: "Portfolio item number 1"
+title: "Gene Regulatory Network in Myeloid Dendritic Cell Differentiation"
 excerpt: "Short description of portfolio item number 1<br/><img src='/images/Poster_Myeloid_SYK.jpg'>"
 collection: portfolio
 ---
