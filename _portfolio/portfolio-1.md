@@ -1,6 +1,6 @@
 ---
-title: "Single-Cell Atlas of Neurological Disorder Genes in Human Brain Development"
-excerpt: "Present a human brain single-cell atlas spanning all developmental stages, highlighting temporal and cellular-specific expression of 3,380 neurological disorder risk genes, including key findings on autism-related genes.<br/><img src='/images/KSBNS_poster_SYK.jpg'>"
+title: "Exploring the cellular and temporal specificity of neurological disorder risk genes in human brain development"
+excerpt: "Present a human brain single-cell atlas spanning all developmental stages, highlighting temporal and cellular-specific expression of 3,380 neurological disorder risk genes.<br/><img src='/images/KSBNS_poster_SYK.jpg'>"
 collection: portfolio
 ---
 
