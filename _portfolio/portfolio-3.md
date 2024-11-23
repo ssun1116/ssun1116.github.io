@@ -1,11 +1,8 @@
 ---
-title: "Gene Regulatory Network in Myeloid Dendritic Cell Differentiation"
-excerpt: "<img src='/images/Poster_Myeloid_SYK.jpg'>"
+title: "Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation"
+excerpt: "Presented single-cell workflows for dataset integration, gene regulatory networks, and DEG analysis in dendritic cell differentiation.<br/><img src='/images/Poster_Myeloid_SYK.jpg'>"
 collection: portfolio
 ---
-
-- Title: Gene regulatory network reveals the landscape of myeloid dendritic cell differentiation
-    - Summary: Presented the use of single-cell analysis workflows (public dataset integration, gene regulatory network construction, and DEG analysis) to investigate dendritic cell differentiation. This work helped me build proficiency in single-cell RNA-seq analysis.
 
 This poster presents a comprehensive transcriptomic study of myeloid dendritic cell (DC) differentiation, revealing the complex regulatory networks that drive the development of these crucial immune cells. By integrating single-cell RNA sequencing data from 81,867 bone marrow cells, the study provides a high-resolution map of hematopoietic stem cell (HSC) differentiation into myeloid and lymphoid lineages, focusing on dendritic cell subpopulations.
 
