@@ -2,7 +2,7 @@
 title: "[JournalClub] Geneformer: Transfer learning enables predictions in network biology (241105)"
 collection: talks
 type: "Journal Club"
-permalink: /talks/JournalClub_240821
+permalink: /talks/JournalClub_241105
 venue: "Korea University"
 date: 2024-11-05
 location: "Seoul, Korea"
