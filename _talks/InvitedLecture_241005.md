@@ -2,7 +2,7 @@
 title: "[BIOINFO 2024] Exploring Disorder Gene Dynamics with Single-cell Atlas of Human Brain Development"
 collection: talks
 type: "Invited Lecture"
-permalink: /talks/2024-10-25-talk
+permalink: /talks/InvitedLecture_241005
 venue: "BIOINFO 2024 Annual Conference"
 date: 2024-10-25
 location: "Gyeongju, Korea"
