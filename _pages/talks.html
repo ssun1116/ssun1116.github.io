@@ -13,14 +13,6 @@ author_profile: true
 
 {% assign sorted_talks = site.talks | sort: "type" %}
 
-{% assign current_type = "" %}
-{% assign grouped_talks = "" %}
 {% for post in sorted_talks %}
-  {% if post.type != current_type %}
-    {% assign current_type = post.type %}
-    {% assign grouped_talks = site.talks | where: "type", current_type | sort: "date" | reverse %}
-    {% for grouped_post in grouped_talks %}
-      {% include archive-single-talk.html post=grouped_post %}
-    {% endfor %}
-  {% endif %}
+  {% include archive-single-talk.html %}
 {% endfor %}
