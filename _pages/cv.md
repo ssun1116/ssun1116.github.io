@@ -46,9 +46,12 @@ redirect_from:
 
 
 ## Conference Presentations
-  <ul style="font-size: 22px;">{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+<ul style="font-size: 22px;">
+  {% assign conference_talks = site.talks | where: "type", "Invited Lecture" %}
+  {% for post in conference_talks reversed %}
+    {% include archive-single-talk-cv.html post=post %}
+  {% endfor %}
+</ul>
 
 ## Poster Presentations (Selected)
 
