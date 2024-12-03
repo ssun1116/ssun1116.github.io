@@ -1,7 +1,7 @@
 ---
 title: "Proteogenomic analysis reveals non-small cell lung cancer subtypes predicting chromosome instability, and tumor microenvironment"
 collection: publications
-category: manuscripts
+category: co-author
 siteurl: 'https://doi.org/10.1038/s41467-024-54434-4'
 date: 2024-11-23
 venue: 'Nature Communications'
