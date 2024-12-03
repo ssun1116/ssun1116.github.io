@@ -399,3 +399,10 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+.page-publications #main {
+  max-width: 1200px; /* 원하는 폭 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
