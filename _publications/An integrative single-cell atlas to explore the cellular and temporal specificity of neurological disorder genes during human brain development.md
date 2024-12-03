@@ -1,7 +1,7 @@
 ---
 title: "An integrative single-cell atlas to explore the cellular and temporal specificity of neurological disorder genes during human brain development"
 collection: publications
-category: manuscripts
+category: first-author
 siteurl: 'https://doi.org/10.1038/s12276-024-01328-6'
 date: 2024-10-03
 venue: 'Experimental & Molecular Medicine'
