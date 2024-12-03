@@ -1,7 +1,7 @@
 ---
 title: "Dysregulation of the Wnt-β-catenin signaling pathway via Rnf146 upregulation in a VPA-induced mouse model of autism spectrum disorder"
 collection: publications
-category: manuscripts
+category: first-author
 siteurl: 'https://doi.org/10.1038/s12276-023-01065-2'
 date: 2023-08-01
 venue: 'Experimental & Molecular Medicine'
