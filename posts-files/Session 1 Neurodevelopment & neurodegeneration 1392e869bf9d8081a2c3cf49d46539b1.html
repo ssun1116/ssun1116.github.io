@@ -1,0 +1,689 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Session 1: Neurodevelopment &amp; neurodegeneration</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1392e869-bf9d-8081-a2c3-cf49d46539b1" class="page sans"><header><h1 class="page-title">Session 1: <strong>Neurodevelopment &amp; neurodegeneration</strong></h1><p class="page-description"></p></header><div class="page-body"><h1 id="c3a846ee-3e1a-449b-abfb-eb64e32d0caf" class="">Session 1: <strong>Neurodevelopment &amp; neurodegeneration</strong></h1><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="1392e869-bf9d-8032-ba9d-fabc7ea7eb37"><div style="font-size:1.5em"><span class="icon">🔖</span></div><div style="width:100%"><ul id="b437e6fb-6100-43e6-85a6-8da548e7efc9" class="bulleted-list"><li style="list-style-type:disc"><strong>increase of injry. hypoxic ischemic event. maternal infections. association of these events with diversion of deveopmental outcomes - schizophrenia, epilepsy, 다른 neuropsyciatric disease. 이 perinatal 시기를 이해하는 것이 질환 연구에 중요하다.</strong></li></ul><ul id="1392e869-bf9d-80d4-8796-d0794114f4e8" class="bulleted-list"><li style="list-style-type:disc">이런 요소 SOP에 쓰면 진짜좋을 듯 “Perinatal = blackbox”</li></ul></div></figure><h2 id="36f07eb4-cf5e-4fd3-94dc-44488c786f30" class="">Defining the Dynamic Infant Brain - <a href="https://paredeslab.ucsf.edu/people-0">Mercedes Paredes (UCSF)</a></h2><ul id="f7f14a6e-1884-4ed2-b13f-621df838a77d" class="bulleted-list"><li style="list-style-type:disc">오늘 발표는 연구실의 Jae Yeon Kim 박사님의 연구를 토대로 이뤄진 것 같음</li></ul><ul id="e8232b79-1b25-4f53-b3ac-fb7bca59cdc9" class="bulleted-list"><li style="list-style-type:disc">현재 해당 논문은 revision 중인 것 같다?</li></ul><h3 id="bf5cd768-0447-469a-80e8-9ec5a987dee0" class="">Piecing together the human brain</h3><figure id="1392e869-bf9d-8021-8b3b-feabbd9285c1" class="image"><a href="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image.png"><img style="width:624px" src="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image.png"/></a></figure><ul id="eec27e87-42be-4a45-ae11-41e8f51f0715" class="bulleted-list"><li style="list-style-type:disc">Development 과정에서 어떻게 cell type 만들어지고 heterogeneity가 구성되는가?</li></ul><ul id="bdf2bbdc-42bc-4ca5-9e34-e5c67e4787fd" class="bulleted-list"><li style="list-style-type:disc"><strong>perinatal 기의 injury는</strong> neurodevelopmental condition (ASD, pediatric epilepsy)에 위험<ul id="1392e869-bf9d-8094-ad93-d31f9a4426c7" class="bulleted-list"><li style="list-style-type:circle">여전히 black box다 in neuroscience → time before and right after: hard to interrogtate ehte infant brain especially directly. how to model?</li></ul><ul id="1392e869-bf9d-8085-bc7e-c911fb125faf" class="bulleted-list"><li style="list-style-type:circle"><strong>increase of injry. hypoxic ischemic event. maternal infections. association of these events with diversion of deveopmental outcomes - schizophrenia, epilepsy, 다른 neuropsyciatric disease. 이 perinatal 시기를 이해하는 것이 질환 연구에 중요하다.</strong></li></ul></li></ul><ul id="e977b005-b19b-4db7-8b64-c5b1fdd966b6" class="bulleted-list"><li style="list-style-type:disc">Extensive neuronalmigrationin the neonatal brain<ul id="650c2882-f9f5-482a-a7c6-f5b957d62189" class="bulleted-list"><li style="list-style-type:circle">Neonatal → migration of inhibitory neurons </li></ul><ul id="84eefa2c-f40d-4b22-a911-5795184d6447" class="bulleted-list"><li style="list-style-type:circle">인간에게는 쥐와 다르게 RMS 외에도 MMS 등의 다른 branch가 있음. 이런 것들을 잘 이해해야 neural 질병을 이해할 수 있을 것임.</li></ul><ul id="93ed42ca-378d-4140-9fc0-2a0a3a68ceef" class="bulleted-list"><li style="list-style-type:circle">Arc 같은 경우에는, 인간, 그리고 돼지에서는 보이지만 marmoset과 쥐에서는 conserve 되지 않는 구조임을 샘플에서 비교를 통해 발견함.<ul id="a5bffb60-9d0c-459a-a681-86b44dea8a8c" class="bulleted-list"><li style="list-style-type:square">확실하게 human, pig에서 Arc ratio이 높게 나왔고, marmosset, mouse는 거의 나타나지 않음</li></ul><ul id="68257ba5-a8e3-4ca5-89a2-1a14b8cba08b" class="bulleted-list"><li style="list-style-type:square">종간 비교를 했을 때, Arc area 비율과 GI에는 정비례하는 관계가 있었다. </li></ul></li></ul><ul id="28337cf9-b112-41b4-9256-041ea88f325c" class="bulleted-list"><li style="list-style-type:circle">Arc 지역의 cell type의 특징 → migrating neuron의 marker인 DCX, GAD1의 높은 발현.</li></ul><ul id="0313f328-26ce-43ed-9fd8-a64eac9347ad" class="bulleted-list"><li style="list-style-type:circle">LGE, MGE, CGE → marker로도 구분되고 다른 유형의 interneuron을 만든다.</li></ul><ul id="24e1479e-fd3c-4e84-a63c-609b18ccc33b" class="bulleted-list"><li style="list-style-type:circle">Arc는 interneuron의 다양한 population이 conserve 된 구조임을 알아냄. <ul id="cca8ba1b-b758-4b28-8474-5a0ae7466b50" class="bulleted-list"><li style="list-style-type:square">Postnatal reservoir for diverse GABAergic interneurons.<ul id="2ea2d154-5484-40d8-bc8f-fc2a55f5590a" class="bulleted-list"><li style="list-style-type:disc">Arc → human에게서 GABAergic interneuron의 다양성이 나타나게 하는 중요한 영역?</li></ul></li></ul><ul id="aa8d9d94-6e83-445f-951a-f72b0e92b96d" class="bulleted-list"><li style="list-style-type:square">Arc: GE ~ immature interneuron 사이의 중간점의 발현 패턴을 보임.</li></ul><ul id="290d6b1d-68fb-4475-aced-bb16f4cafe87" class="bulleted-list"><li style="list-style-type:square">Arc가 보존되었던 pig는 인간과 더 유사한 양상을 보임 (DCS, GAD1)<ul id="0777677d-1e59-4746-af74-0ac209964280" class="bulleted-list"><li style="list-style-type:disc">인간의 좋은 모델이 될 수 있음을 시사함.</li></ul></li></ul><ul id="1633e92d-47c0-4902-a41d-03a47ebcb687" class="bulleted-list"><li style="list-style-type:square">A→P의 axis에 따라 DCX+를 immune staining하여 3D 구조를 살펴보았을 때, DCX+ cell들이 점점 더 insular 쪽으로 들어오는  것을 볼 수 있었다. </li></ul><ul id="7faa67c0-8baf-4d56-be2c-0e9e43a5e8d0" class="bulleted-list"><li style="list-style-type:square">여담) 모든 brain 연구는 spatial과 연결되어야하는 것 같다… transcriptome만 보는 건 의미가 없음. Brain region마다의 차이가 너무 크기 때문에.<ul id="61cd0b04-ceef-4de3-8c9b-46e991ef4e2e" class="bulleted-list"><li style="list-style-type:disc">뇌는 진짜 region에 따른 pattern, function이 다르고 중요한 기관인 것 같음..</li></ul><ul id="73179e71-166b-4001-83e9-a735d77bf0f6" class="bulleted-list"><li style="list-style-type:disc">Expression pattern이 실제 spatial 상에서 보이는 걸 확인하는 게 중요한 것 같다</li></ul></li></ul><ul id="48319a7d-681f-4ce7-9459-71ae3bab61bc" class="bulleted-list"><li style="list-style-type:square">이 중에 CGE, MGE derived neuron이 다양한데, 그 중에서도 CGE-derived region이 대부분을 차지하여, corical evolving region에서는 CGE 뉴런들의 수가 확장된다고 결론 지을 수 있다. </li></ul><ul id="ff92b404-b8b6-4b06-bc41-8c6fb5a95cb0" class="bulleted-list"><li style="list-style-type:square">CGE 연관 young neuron들은 Arc에서 기인된 interneuron들<ul id="57bbae6e-b8f6-4283-a6c4-2f1d1e0b7ffd" class="bulleted-list"><li style="list-style-type:disc">Pig &amp; human에서 Arc cortical targets → VIP high neurons</li></ul><ul id="833566ac-37d7-466a-ba96-3f53c84f31d2" class="bulleted-list"><li style="list-style-type:disc">Chain of CGE subtype cells</li></ul></li></ul></li></ul></li></ul><ul id="f2ef05d9-1f9e-44d3-acd4-c0fd7a41e234" class="bulleted-list"><li style="list-style-type:disc">결론 &amp; 확장된 연구<ul id="2ff8a9f2-0a63-4f5a-82b5-ee546475ceab" class="bulleted-list"><li style="list-style-type:circle">Arc와 Arc에 있는 세포들이 neuronal migration and expansion과 관련이 있음. <ul id="be29749e-fa21-47e9-a6e3-20face29ae21" class="bulleted-list"><li style="list-style-type:square">Arc is GABA의 origin이다. </li></ul></li></ul><ul id="066c53f9-9238-4193-a2c8-6d45a5cfc817" class="bulleted-list"><li style="list-style-type:circle">Hippocampus → subventricular zone 있음, 여기서 adult neurogenesis 일어남</li></ul><ul id="851db071-7b28-48e4-a60e-86ec55fd9005" class="bulleted-list"><li style="list-style-type:circle">Hippocampus ~ brain size와 큰 연관성.<ul id="6d1e674e-f8f8-4000-bfd8-059179e2b6a2" class="bulleted-list"><li style="list-style-type:square">Neonatal 때 neural stem cells → newborn neuron, adult neurogenesis</li></ul><ul id="c1939520-2595-4ad9-b187-7635bf9cddca" class="bulleted-list"><li style="list-style-type:square">Deveopment 과정에서 NSC cell은 어떻게 organize하는가?<ul id="5bee0a8d-2a8d-43a3-9845-5d9d0bd00bf0" class="bulleted-list"><li style="list-style-type:disc">GW14에 Ventricular에 많았떤 proliferating cell이 GW30됐을 때 다 사라졌다. </li></ul><ul id="7232179d-d5f4-4e69-9c5a-cbeae0481359" class="bulleted-list"><li style="list-style-type:disc">2nd trimester → mitotic cell 감소. </li></ul></li></ul></li></ul><ul id="77eda84c-8c65-4bc7-adc5-6b68116daf82" class="bulleted-list"><li style="list-style-type:circle">1st year → loss of RG and immature neuron<ul id="f0feb0cc-d613-4e2a-a400-1e2f4a475f3e" class="bulleted-list"><li style="list-style-type:square">prenatal → postnatal (출생 후 1년)<ul id="a4a7c25e-fd20-4c59-952e-aa0ad17d13a4" class="bulleted-list"><li style="list-style-type:disc">Astrocyte 증가</li></ul><ul id="e5b235d5-ae8c-4616-a505-c83ac54d79ee" class="bulleted-list"><li style="list-style-type:disc">RGC 거의 없어짐.</li></ul><ul id="8b184735-7bca-49fd-8935-2f53053ecd18" class="bulleted-list"><li style="list-style-type:disc">Radial glial/immature neuron은 줄어들고 mature neuron은 증가하고</li></ul></li></ul><ul id="18e88661-3d6b-49b7-87e1-2bc5aa12d6e9" class="bulleted-list"><li style="list-style-type:square">RG</li></ul></li></ul><ul id="633e64c2-03fd-4c01-889b-2e1fa6fd3caf" class="bulleted-list"><li style="list-style-type:circle">Hippocampus에서 RG → astrocyte, neuron 두 가지 lineage로<ul id="b9b8491b-7daf-4c48-88fa-badddf822ce7" class="bulleted-list"><li style="list-style-type:square">1년차 때 hippocampus neural stem cells → astrocyte feature 보임</li></ul></li></ul><ul id="d21e08e1-df25-42df-9460-21765d69b439" class="bulleted-list"><li style="list-style-type:circle">Adult brain development → novel tool 필요, patient-based outreach (?)</li></ul></li></ul><p id="ad8f98e8-4a97-4cde-9ca7-bba531b9c6c6" class="">여담) 이 학회는 시간 지나도 중간에 끊거나 하지는 않음. 한국 학회랑 달리 노트북 앞에만 서있는 게 아니라 진짜 테드톡처럼 좀 나와서 청중들을 보면서 하고 많은 제스쳐를 쓰는게 특징인 듯. 긴 시간을 쉬지 않고 같은 톤으로 계속 열정적으로 발표하는게 멋진 것 같다…<div class="indented"><ul id="b0a1e6e3-9bcd-4f9b-9c08-27c71c7b3ed6" class="bulleted-list"><li style="list-style-type:disc">근데 프롬프터가 있는 거 같기도 해요 Linarsson은 프롬프터 많이 읽더라구요..</li></ul><ul id="bff9ec61-6d74-4f5b-a9ce-1640226cd4fe" class="bulleted-list"><li style="list-style-type:disc">아하 ㅋㅋㅋ 의외다..</li></ul></div></p><p id="008cfc4f-7f52-4fb6-8f79-5a96644cc412" class="">여담) 돼지가 사람이랑 유사성이 꽤 많아보여서 신기했음. 마지막에 웃는 돼지 얼굴이 좀 슬프다..</p><div id="f3d0048d-4a42-4608-9be6-c850a59d979a" class="column-list"><div id="195547d2-ce41-4fb1-98bf-73944455a195" style="width:43.75%" class="column"><figure id="36fb59cf-4c9a-4ea7-8972-4015a07c38da" class="image"><a href="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image%201.png"><img style="width:336px" src="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image%201.png"/></a></figure></div><div id="4fecf657-b8f0-4c6e-948c-2b80593816fc" style="width:56.25%" class="column"><figure id="7e806b30-fb2f-40f4-b8c6-130cda2b16e2" class="image"><a href="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/IMG_9855.heic"><img style="width:192px" src="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/IMG_9855.heic"/></a></figure></div></div><p id="9f813f8e-7cfd-4c16-9fb2-2dc9f86c05a0" class="">여담) 이 교수님도 patient와 그들의 가족들에게 감사인사 함 → 진짜 이게 덕목이다!</p><ul id="7a7238e5-1d77-45ec-9b88-d083268a2e2c" class="bulleted-list"><li style="list-style-type:disc">Arc의 inhibitory neuron → Alzhiemer’s disease에서 이를 replenish하믕로써 치료법을 개발할 수 있는가? 하는 scientific fiction question이 있었음.<ul id="351f881c-a7d9-45ac-b14a-fb76ed8f0783" class="bulleted-list"><li style="list-style-type:circle">Prenatal inhibitory vs. Postnatal inhibitory의 특징을 비교해서 이를 반영한다면 ?</li></ul></li></ul><p id="9114e18f-5413-477b-b0e7-8d4d8bc4a790" class="">
+</p><h2 id="84cf4d16-a41c-4d4c-8ec4-3a1dddcbe1b8" class="">Developmental gene expression patterns driving species-specific cortical features</h2><ul id="19547109-dba1-4dff-9cc7-f3d60797da10" class="bulleted-list"><li style="list-style-type:disc">VIB-KU Leuven university - Esther Klingler</li></ul><h3 id="4d06a136-1faf-4103-b149-1689055ce76d" class="">What is the source of interspecies brain diversity? </h3><ul id="1ec5f664-10e1-48bf-9571-7a16242f62d3" class="bulleted-list"><li style="list-style-type:disc">여태 다양한 연구들에서 mouse, 원숭이, 인간의 뇌 간의 차이와 유사점을 연구했었음.</li></ul><ul id="357329d5-41c4-48e7-8865-7d40b7b84e1e" class="bulleted-list"><li style="list-style-type:disc">여기에서 강조하고 싶은 종 간 차이는 유전자들의 발현 타이밍이 다르다는 것이다. </li></ul><ul id="177c38cf-76ff-496c-b1b7-8d31a0c71aca" class="bulleted-list"><li style="list-style-type:disc">결론은 쥐에서 유전자 발현의 타이밍을 잘 조절하면 더욱 인간과 유사한 모델을 만들 수 있다는 것이다. </li></ul><p id="3ebd146c-f29c-4d7b-800a-ecf5a0eda5aa" class=""><a href="https://hsywpxc9wr.unige.ch/html/gene-browser">https://hsywpxc9wr.unige.ch/html/gene-browser</a></p><p id="1392e869-bf9d-80b2-8391-f0d4bb5aa82f" class="">
+</p><h1 id="1392e869-bf9d-8069-906b-fc9204c09aaa" class="">Human brain cell atlases and their application to disease (Ed Lein)</h1><ul id="1392e869-bf9d-801d-8848-f0b7e9fc2063" class="bulleted-list"><li style="list-style-type:disc">오늘 발표 내용은 거의 이 논문인 듯 <a href="https://www.biorxiv.org/content/10.1101/2023.05.08.539485v3.full">https://www.biorxiv.org/content/10.1101/2023.05.08.539485v3.full</a></li></ul><figure id="1392e869-bf9d-80ea-b486-ee8c2d196237" class="image"><a href="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image%202.png"><img style="width:675.9921875px" src="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image%202.png"/></a></figure><h2 id="1392e869-bf9d-8088-9da1-ff650cfe32ab" class="">Application of human brain atlas to Alzheimer’s disease </h2><ul id="1392e869-bf9d-80b2-9649-d14ecade728c" class="bulleted-list"><li style="list-style-type:disc">Transcriptome → cell type diversity 규명 (다양한 BICCN atlas)</li></ul><ul id="1392e869-bf9d-8073-8f87-e24cf2d121d6" class="bulleted-list"><li style="list-style-type:disc">MERFISH → cortical layer에 따른 spatial organoization 분석을 완료하였음.</li></ul><ul id="1392e869-bf9d-801c-b0ee-da95c3a8e19e" class="bulleted-list"><li style="list-style-type:disc">Patch-seq → patch-clamp를 같이 찍는 방법인듯?ㅌ</li></ul><ul id="1392e869-bf9d-80a5-8782-fdad4a0f0e6f" class="bulleted-list"><li style="list-style-type:disc">Highly annotated atlas for human brain →<strong> reference가 되고있다.</strong><figure id="1392e869-bf9d-8041-8340-e21e16fbfa0c" class="image"><a href="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image%203.png"><img style="width:624px" src="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image%203.png"/></a></figure><ul id="1392e869-bf9d-81c9-bb49-f7e0136a4873" class="bulleted-list"><li style="list-style-type:circle">HMBA project (Human and Mamalian Brain Atlas)<ul id="1392e869-bf9d-8124-9c0a-db8630277506" class="bulleted-list"><li style="list-style-type:square">fMRI + single cell genomics  + spatial + patch-seq →products</li></ul><ul id="1392e869-bf9d-81ba-b892-efa321abbbe0" class="bulleted-list"><li style="list-style-type:square">45명의 PI가 collaborate하는 프로젝트.</li></ul></li></ul><ul id="1392e869-bf9d-816a-8040-def57401b643" class="bulleted-list"><li style="list-style-type:circle">Cell type-selective enhancers → similar specificity across species (mammal)<ul id="1392e869-bf9d-81f6-8aeb-edbb30393a4c" class="bulleted-list"><li style="list-style-type:square">Perturbation system + Gene therapy에 유용하다. regulatory biology를 이해할 수 있게 되니까. 이 정보를 이용해서 Regulatory sequence를 찾고 유전적으로 target할 수 있는 AAV target을 찾고… perturbation target / gene therapy에 활용가능하다.</li></ul></li></ul></li></ul><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="1392e869-bf9d-80e0-9d69-e59e5151ce52"><div style="font-size:1.5em"><span class="icon">🔖</span></div><div style="width:100%"><p id="a0c89e12-709a-4c57-96cf-9dc4f1201d9f" class="">Perturbation / gene therapy → 여전히 지향점이라는 느낌.</p></div></figure><p id="1392e869-bf9d-80a2-940b-eba115ee95e9" class="">
+</p><h3 id="1392e869-bf9d-8027-a41e-c678f9dcb9d9" class="">The Human brain cell atlas is ready to use for disease studies → atlas 연구를 이제 disease에 적용하는 거야 (SEA-AD)</h3><ul id="1392e869-bf9d-8083-8087-d9e9c265dbba" class="bulleted-list"><li style="list-style-type:disc"><strong>Therapeutic interventions</strong> → 현재의 포커스.</li></ul><ul id="1392e869-bf9d-808e-b12a-f30571a3c209" class="bulleted-list"><li style="list-style-type:disc">SEA-AD (Seattle Alzheimer’s Disease atlas 연구)<ul id="1392e869-bf9d-80af-89f7-e37e565023ce" class="bulleted-list"><li style="list-style-type:circle">SEA-AD) <a href="https://portal.brain-map.org/explore/seattle-alzheimers-disease">https://portal.brain-map.org/explore/seattle-alzheimers-disease</a></li></ul></li></ul><ul id="1392e869-bf9d-80b2-b76d-c6212c4ce315" class="bulleted-list"><li style="list-style-type:disc">Allen과 협업해서 atlas 정보를 사용.</li></ul><ul id="1392e869-bf9d-8018-b46e-da590377580d" class="bulleted-list"><li style="list-style-type:disc">Atlas → understand cellular specificity / model disease trajectory.</li></ul><ul id="1392e869-bf9d-807a-b756-f3d8161f7881" class="bulleted-list"><li style="list-style-type:disc">툴 사용 → 누가 affected, 어디 있고, modulation은 어떻게 영향줄것인가?</li></ul><ul id="1392e869-bf9d-8076-955c-f24d172b3a74" class="bulleted-list"><li style="list-style-type:disc">Circuit → consequence of pathology in AD.</li></ul><figure id="1392e869-bf9d-80c9-a25c-edea237adec3" class="image"><a href="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image%204.png"><img style="width:624px" src="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image%204.png"/></a></figure><p id="1392e869-bf9d-805e-b53a-f18e30a8be56" class="">질문) SEA_AD 코호트와 ROSMAP cohort는 어떻게 다른것일까. metadata는 유사해보이는데.</p><p id="1392e869-bf9d-80dd-aa28-d40fc1c205d5" class="">→ SEA-AD, Mathys_2023 (ROSMAP), Green_2023</p><h2 id="1392e869-bf9d-8078-b3cc-c013db536ca4" class="">Disease → AD</h2><p id="1392e869-bf9d-80da-99dc-c7c439f85efc" class="">이렇게 AD cohort에 세 개의 큰 축이 있는 것 같다.</p><ul id="1392e869-bf9d-8082-b3d3-d2872f303155" class="bulleted-list"><li style="list-style-type:disc">Neuropathology + Molecular Analysis.</li></ul><ul id="1392e869-bf9d-80b7-a8b5-e6f4e6499560" class="bulleted-list"><li style="list-style-type:disc">Machine-learning으로 neuropathogloy capture → image quantification을 사용해서 pathology burden을 측정함 (beta amyloid, tau protein)<ul id="1392e869-bf9d-80c4-adc7-f9e9cd3bdb7c" class="bulleted-list"><li style="list-style-type:circle">Proteinopathies</li></ul><ul id="1392e869-bf9d-80dd-8261-dea9d895728e" class="bulleted-list"><li style="list-style-type:circle">Marker for cell populations (neuron, astrocyte, microglia)</li></ul><figure id="1392e869-bf9d-80ed-b72e-cec27445d42a" class="image"><a href="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image%205.png"><img style="width:624px" src="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/image%205.png"/></a></figure></li></ul><ul id="1392e869-bf9d-8078-9e69-ca01ebae39b3" class="bulleted-list"><li style="list-style-type:disc">trajectory를 donor들 사이의 CPS (Continuous Pseudopregression Score)을 만들어서 나열함. <ul id="1392e869-bf9d-81c8-9ad1-c830b7330049" class="bulleted-list"><li style="list-style-type:circle">두 개의 큰 phase를 드러냄<ul id="1392e869-bf9d-813d-acf2-c252785a2575" class="bulleted-list"><li style="list-style-type:square">Early: linear progress</li></ul><ul id="1392e869-bf9d-819b-a9f4-f126645c94c6" class="bulleted-list"><li style="list-style-type:square">Late: exponential progress</li></ul></li></ul></li></ul><ul id="1392e869-bf9d-80bc-bc21-db8bf64d7643" class="bulleted-list"><li style="list-style-type:disc">Reference와 SEA-AD를 integration한 후에 cell type 예측<ul id="1392e869-bf9d-81a3-bd0e-cc136f02c063" class="bulleted-list"><li style="list-style-type:circle">여담) intergation이 한 클러스터에 아주 동글하게 잘 됨</li></ul></li></ul><ul id="1392e869-bf9d-80ef-8283-ceabf5038e4e" class="bulleted-list"><li style="list-style-type:disc">Brain 에서 disease vulnerability를 볼 때, DEG 수보다도 abundance를 비교하는 것으로 많이 함. Neuronal loss / glial의 induction (모집?) 을 기반으로 pathology를 보는 경향이 많음.<ul id="1392e869-bf9d-808c-aa60-c2fba3b80f5b" class="bulleted-list"><li style="list-style-type:circle">Local pathology를 보면 더 분명하게 시그널이 나옴. (regional의 중요성)</li></ul><ul id="1392e869-bf9d-80bd-902b-c0e94db8c189" class="bulleted-list"><li style="list-style-type:circle">cortical regions 달라도 associated cell types은 일관되게 보임</li></ul></li></ul><ul id="1392e869-bf9d-80a0-b862-c9a1b1a2f1fd" class="bulleted-list"><li style="list-style-type:disc"><strong>MERFISH를 이용하더 더 구체적으로 살펴보고 있음</strong><ul id="1392e869-bf9d-8141-8428-c742075b22be" class="bulleted-list"><li style="list-style-type:circle">대부분은 Upper layer에서 affect 받음</li></ul></li></ul><ul id="1392e869-bf9d-8095-a22e-f50899306d68" class="bulleted-list"><li style="list-style-type:disc">Non neuronal trajectory<ul id="1392e869-bf9d-8121-9074-c5b45256bf95" class="bulleted-list"><li style="list-style-type:circle">Early stage: astro &amp; microglia increase </li></ul><ul id="1392e869-bf9d-817d-9507-d3fb38751bff" class="bulleted-list"><li style="list-style-type:circle">Early stage:  Oligo loss</li></ul></li></ul><ul id="1392e869-bf9d-8096-a546-ee252ba74e3e" class="bulleted-list"><li style="list-style-type:disc">Neuron trajectory <ul id="1392e869-bf9d-81dd-ac6c-e3e52ea028ae" class="bulleted-list"><li style="list-style-type:circle">Earliest neuron loss → SST positive interneurons의 loss가 아주 큼 → 특히 plague, tau 쌓이는데 영향 줌?</li></ul><ul id="1392e869-bf9d-8161-acb4-eb7960332e8e" class="bulleted-list"><li style="list-style-type:circle">Late stage: Pvalb loss </li></ul></li></ul><ul id="1392e869-bf9d-8090-a35b-f3905fdd7285" class="bulleted-list"><li style="list-style-type:disc">이전 연구들 replicate<ul id="1392e869-bf9d-81dc-9beb-c3ffd5dfb651" class="bulleted-list"><li style="list-style-type:circle">셀 수 충분히 많은 것이 중요 </li></ul><ul id="1392e869-bf9d-813d-80f1-f4ace19c55bd" class="bulleted-list"><li style="list-style-type:circle">SST</li></ul><ul id="1392e869-bf9d-816b-986f-ed7a1acf2d97" class="bulleted-list"><li style="list-style-type:circle">microglia</li></ul><ul id="1392e869-bf9d-812b-a207-d49c26ef9174" class="bulleted-list"><li style="list-style-type:circle">layer 2-3</li></ul></li></ul><ul id="1392e869-bf9d-8050-8318-d35d80442693" class="bulleted-list"><li style="list-style-type:disc">Early stage AD에 SST가 중요함<ul id="1392e869-bf9d-8192-ada9-dc534086db87" class="bulleted-list"><li style="list-style-type:circle">이미 30-50년 전에 이것을 말하고 있었음</li></ul><ul id="1392e869-bf9d-8148-b253-da68d4ffb978" class="bulleted-list"><li style="list-style-type:circle">그렇지만 higher resolution으로 여러가지 데이터를 종합하여 여기에서 제시한다는 게 핵심 </li></ul><ul id="1392e869-bf9d-81d2-9599-fd0739431292" class="bulleted-list"><li style="list-style-type:circle">Mathys 2023 (cell)에서도 SST inhibitory neuron이 AD 연관되어 있다는 것을 주요 결과로 제시했었음 → ROSMAP과 SEA-AD (Allen)이 같은 걸 찾았구먼..</li></ul></li></ul><ul id="1392e869-bf9d-80a1-b790-eb4f5d3d9f94" class="bulleted-list"><li style="list-style-type:disc">또 하나 제시하는 것 → Reelin (RELN)</li></ul><ul id="1392e869-bf9d-8079-9797-ea750d53afdb" class="bulleted-list"><li style="list-style-type:disc">SST → Patch-seq으로 확인해봤을 때 굉장히 다양한 세포 구조 유형을 가지고 있음<ul id="1392e869-bf9d-812c-8f6a-ded101085896" class="bulleted-list"><li style="list-style-type:circle">Human specialization</li></ul><ul id="1392e869-bf9d-8158-9c82-cd432c3a241d" class="bulleted-list"><li style="list-style-type:circle">그중에서도 주목하는 것은 double bouquet 형태</li></ul></li></ul><ul id="1392e869-bf9d-8059-b3e0-d96cca75790d" class="bulleted-list"><li style="list-style-type:disc">EI balance → AD에서 특히 고려하는 요소 중 하나인 듯.<ul id="1392e869-bf9d-81a0-bd07-d21627e6157c" class="bulleted-list"><li style="list-style-type:circle">SST → excitatory, inhibitory neuron 모두 영향을 주는 아이</li></ul></li></ul><ul id="1392e869-bf9d-8037-8281-dfddcaa2aa2e" class="bulleted-list"><li style="list-style-type:disc">Early intervention → AD 치료에 효과적일 것<ul id="1392e869-bf9d-811d-8564-c0a6cac1c196" class="bulleted-list"><li style="list-style-type:circle">Tool: Neurosurgical patch-seq (Lee, 2023, Nature), enhancer AAV labeling.</li></ul><ul id="1392e869-bf9d-8165-a9cf-d84f18ee02cd" class="bulleted-list"><li style="list-style-type:circle">SST가 target</li></ul></li></ul><p id="1392e869-bf9d-8073-a0fa-d2bdf2efb1fc" class="">여담) 모든 연구자들이 다 imaging, spatial, enginnering technique을 함께 쓰고있다. 아무도 DEG 패턴, GO pathway 등에 주목하지 않음.</p><ul id="1392e869-bf9d-80cd-8ec1-e81e40225bf0" class="bulleted-list"><li style="list-style-type:disc">Transcriptomic → cell type annotation, cell abundance, (marker) gene expression 패턴 확인 + Trajectory</li></ul><ul id="1392e869-bf9d-807e-bee4-d6691a6ab4ff" class="bulleted-list"><li style="list-style-type:disc">그 다음에 바로 이러한 패턴을 spatial 상에서 확인하는 것으로 확장</li></ul><ul id="1392e869-bf9d-8097-97e8-dedbc276270d" class="bulleted-list"><li style="list-style-type:disc">아니면 gene expression, cell abuance를 다른 score, effect 지표와 연관성을 보는 것까지로 확장<ul id="1392e869-bf9d-81dd-bfbe-f72aedebfa18" class="bulleted-list"><li style="list-style-type:circle">DEG에 false positive가 너무 많아서 이 중에서 true signal / ture marker를 찾는 게 너무 어려움. GO 분석에 대해서도 회의가 많다고 들었다. 그걸 이번 학회를 통해 느낄 수 있는듯.</li></ul></li></ul><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="1392e869-bf9d-80d4-b646-d5085dacddb4"><div style="font-size:1.5em"><span class="icon">🔖</span></div><div style="width:100%"><p id="6ff4a063-acfd-452b-83c1-6a57a87e38a8" class="">맞아요. 그래서 DEG나 GO는 해야하는 기본 분석이지만, novelty가 없습니다. 그래서 imaging이나 spatial, in-situ가 돌파구가 될수는 있습니다. 그런데, 반대로 생각하면, in-situ 싱글셀은 2017년부터 나왔는데, 왜 breakthrough 기술이 안될까?도 생각해봐야 합니다. 제가 계속 생각하는건, RNA의 nature 때문이것이지요. Spatial (imaging)이나 in-situ는 사실상 protein을 염색하는 microscopy로 대체할 수 있는것이니까요.<br/><br/>그래서 여기서 고민을 해야하는건, <br/><strong>현재 데이터로 무엇을 할 것인가? 그리고 싱글셀을 레퍼런스로하여, 어떤 모델링을 하는가가 더 중요한 문제같습니다.</strong> (여러분이 싱글셀 자체를 개발하는 사람이 아니라, 특정 질환이나 형질을 연구하는 사람이라면요).</p></div></figure><p id="1392e869-bf9d-800e-a240-f93f281c1ed4" class=""><a href="https://www.biorxiv.org/content/10.1101/2023.11.25.568393v1">https://www.biorxiv.org/content/10.1101/2023.11.25.568393v1</a></p><p id="1392e869-bf9d-803c-907c-ea70ecb91f61" class="">이게 아까 말한 논문인가..? 다음 달에 나온다는..? </p><h3 id="1392e869-bf9d-80c5-8916-d94dec5968c6" class="">QnA</h3><ul id="1392e869-bf9d-8069-b4b1-ffa83378c422" class="bulleted-list"><li style="list-style-type:disc">Allen brain에서는 behavior pattern에 대해서 어떻게 생각하는가? 지금 Allen은 cell type level에서 살펴보았는데, 바로 이것으로 clinical score로 적용하려 하는가? <ul id="1392e869-bf9d-81ec-a31d-d693ae637103" class="bulleted-list"><li style="list-style-type:circle">아직 할 일이 많이 많다. 일단은 cell type에 대해서는 최선을 다했다고 생각한다. </li></ul><ul id="1392e869-bf9d-816e-9031-fdc440d3e3b1" class="bulleted-list"><li style="list-style-type:circle">Cell type에 대한 결과 → follow up by model system 필요함. 지금은 at scale로 결과들을 clinical에 적용하고 있지는 못함.</li></ul></li></ul><ul id="1392e869-bf9d-807d-876e-e18d37c803d6" class="bulleted-list"><li style="list-style-type:disc">Cortex → Reln+ excitatory… projection neuron. subtypes 2개 very vulnerable. 연구중인지?<ul id="1392e869-bf9d-813e-a698-d32556fc8b08" class="bulleted-list"><li style="list-style-type:circle">on list. dive deep하고자 함. atlas랑 같이 하려니까 fully annotate하는데 시간이 좀 걸림. 하고있다.</li></ul><ul id="1392e869-bf9d-8126-b0ba-e67aa09bfe7b" class="bulleted-list"><li style="list-style-type:circle">basl forebrain neuron들은 특정 위치에 있는 것은 아니기 때문에 좀 특정 짓기 어려운 상황이다. 그러나 그것이 중요한 target이라고는 생각한다. </li></ul></li></ul><ul id="1392e869-bf9d-80f7-a83d-d45b8c0eda8c" class="bulleted-list"><li style="list-style-type:disc">SST가 감소하는 것은 알겠는데, mechanism은 무엇인가? Healthy brain → disease brain까지 관찰하는 것이 가능한가? <ul id="1392e869-bf9d-8153-b151-fa73fd5cc014" class="bulleted-list"><li style="list-style-type:circle">더 많은 데이터가 필요하다 정상 뇌가 필요하다. </li></ul></li></ul><h1 id="1392e869-bf9d-8032-8c0a-f665c5f29974" class="">Distinct cellular communities drive trajectories toward either Alzheimer’s disease or alternative brain aging </h1><p id="1392e869-bf9d-800d-a23c-d113c8d0d2e4" class=""><strong><a href="https://www.vibconferences.be/speaker/philip-l-de-jager">Philip L. De Jager</a></strong><strong> - </strong><em>Columbia University Medical Center, US </em></p><p id="1392e869-bf9d-8053-ab08-dec3d99cb370" class="">여담) 앞 순서에서 SEA-AD 발표했는데 이 교수님이 바로 ROSMAP 발표함</p><p id="1392e869-bf9d-80f4-a0b9-d647d72743f7" class=""> 두개가 경쟁그룹일지 공생관계일지 궁금하네요 ㅋㅋ Mathys_2023으로 퉁치던데 앞에서…<div class="indented"><p id="1392e869-bf9d-8198-b6b6-da9d61e55288" class="">근데 둘이 아까 웃으면서 대화하긴 했어욬ㅋㅋㅋㅋ 친해보이긴 했는데.. 무슨 말 하는지를 모르니께..</p></div></p><p id="1392e869-bf9d-806f-ade9-de88be1dc0ef" class="">여담) 약간, ROSMAP은 US PI들 중심으로 가고 SEA-AD는 European PI 중심으로 가는 것 같네요! 저 Tsai 도 MIT 교수인걸 생각하면….!!</p><ul id="1392e869-bf9d-80b2-bc62-dec0db8aa983" class="bulleted-list"><li style="list-style-type:disc">Causal chain event → aging, amyloid beta, tau, cognitive decline 순서로.</li></ul><ul id="1392e869-bf9d-8099-834a-de3274b90524" class="bulleted-list"><li style="list-style-type:disc">이것을 데이터 기반으로 어떻게 재현하고 여기에서 insight를 얻는가가 핵심이다. </li></ul><ul id="1392e869-bf9d-805a-b276-ff66a58fbe61" class="bulleted-list"><li style="list-style-type:disc">Map consequent of individual variants (SNP → expression → AD)</li></ul><ul id="1392e869-bf9d-802d-a548-cafcdcaff0ea" class="bulleted-list"><li style="list-style-type:disc">Microglia가 AD variant에 많은 영향을 주는 건 맞지만 모든 cell types이 기여<ul id="1392e869-bf9d-81e6-a01e-c65a006607bc" class="bulleted-list"><li style="list-style-type:circle">AD variant → 모든 cell type 영향 줌</li></ul></li></ul><ul id="1392e869-bf9d-80ff-bdae-d91aeaf1034a" class="bulleted-list"><li style="list-style-type:disc">Mostafavi 2018) <a href="https://www.nature.com/articles/s41593-018-0154-9">https://www.nature.com/articles/s41593-018-0154-9</a></li></ul><ul id="1392e869-bf9d-8032-a08c-f57edc98eb46" class="bulleted-list"><li style="list-style-type:disc">Green et al 2024 Nature) <a href="https://www.nature.com/articles/s41586-024-07871-6">https://www.nature.com/articles/s41586-024-07871-6</a><ul id="1392e869-bf9d-814f-84a9-e118b8255dc5" class="bulleted-list"><li style="list-style-type:circle">오늘 발표하는 대부분의 내용이 요 논문인 듯</li></ul></li></ul><ul id="1392e869-bf9d-8049-9c8d-d3347c3ce3c9" class="bulleted-list"><li style="list-style-type:disc">Chain event를 subtype들의 관계성을 Model해서 수치적으로 표현함<ul id="1392e869-bf9d-810c-af2f-efc06cb34a94" class="bulleted-list"><li style="list-style-type:circle">trajectory의 좀 더 직관적인 버전인가? </li></ul><ul id="1392e869-bf9d-81c1-a705-cf06dd94def1" class="bulleted-list"><li style="list-style-type:circle"><a href="https://www.nature.com/articles/s41467-023-43132-2/figures/3">https://www.nature.com/articles/s41467-023-43132-2/figures/3</a> (figure 3e)</li></ul></li></ul><ul id="1392e869-bf9d-808f-bf97-e67367301781" class="bulleted-list"><li style="list-style-type:disc">Discovery 그룹과 replication 그룹으로 나눠서 discover cell type annotation → replication으로 projection<ul id="1392e869-bf9d-81b8-813d-d481cafad48d" class="bulleted-list"><li style="list-style-type:circle">요즘 요런 전략으로 데이터 많이 만드는 듯</li></ul></li></ul><ul id="1392e869-bf9d-8011-b83f-fb6c77ade308" class="bulleted-list"><li style="list-style-type:disc">AD에서의 연구 트렌드는 정상 aging에서 어떤 signal을 받게되면 AD라는 branch로 빠지는가인것같다.</li></ul><ul id="1392e869-bf9d-806d-8a1f-e44ec2c19739" class="bulleted-list"><li style="list-style-type:disc">amyloid, tangle ↔ congnitive slope가 완전 cell type enrichment 반대 패턴. </li></ul><ul id="1392e869-bf9d-8037-80f1-fcdb41f21766" class="bulleted-list"><li style="list-style-type:disc">그리고 생각보다 cell type annotation 그냥 cellname# 로 하고 나서 각각 설명 말하는 경우가 많다. <p id="1392e869-bf9d-816a-a425-cf93c75cc958" class="">→ 요거 약간 ROSMAP (어쩌면 Jager?) 의 특징인 것 같긴해요. DEG같은 것도 특이하게 하더라고요. Number를 기반으로 Heatmap 그려서 표현하고…..</p><p id="1392e869-bf9d-816c-af3c-f08a3c9d1489" class="">→ 아까 allen에서도 다 sst 25? sst 10..? 이렇게 했어서 정말 specific하면 어쩔 수 없나보다 생각이 들었어요.. 아하..!</p></li></ul><p id="1392e869-bf9d-80a5-9124-d6a51c937b77" class="">여담) Ed Lein 그룹은 많은 실험 + imaging 등 technique을 많이 사용해서 연구하고, Jager 그룹은 BI / statistics로 많이 승부보는 느낌..</p><ul id="1392e869-bf9d-807a-87a1-f24c940c7c2b" class="bulleted-list"><li style="list-style-type:disc">저는 약간 Allen은 아틀라스를 만듦 중심 → 이것으로 어떻게 활용하지? → AD? 된 건데, 여기는 처음부터 AD를 엄청 목적으로 분석을 하는 것 같다 느꼈어요 ㅇㅅㅇ 제가 생각한 게 맞을까.. <ul id="1392e869-bf9d-8135-a345-dde228d20822" class="bulleted-list"><li style="list-style-type:circle">Jager 그룹은 아예 진짜 AD만 전문적으로 하는 그룹이 맞아요! 그게 차이일 수도 있겠군용</li></ul><ul id="1392e869-bf9d-81d7-b959-d82868c320b6" class="bulleted-list"><li style="list-style-type:circle">Allen은 multimodal이 핵심인 것 같아유 모든 측면에서 brain 연구한다 (그게 진짜 멋진듯!!)</li></ul></li></ul><ul id="1392e869-bf9d-8075-8c45-ce99581a154a" class="bulleted-list"><li style="list-style-type:disc">여기는 single nuc RNA-seq 데이터만 썼는데 거기서 나온 gene exp. 가지고 통계/tool 분석을 다양하게 했네유 → 확장은 visium/KO mouse 데이터 정도<ul id="1392e869-bf9d-815a-8623-c79396b3d68c" class="bulleted-list"><li style="list-style-type:circle">어떤 쪽이 더 트렌드에 맞는지는… 저는 뭔가 Lein 그룹쪽일 것 같다는 생각이 드네요. 근데 저렇게 나이 많은 교수님이 저 많은 툴을 다 이해하시는게 신기하기도..</li></ul><ul id="1392e869-bf9d-8121-9713-c178b4373752" class="bulleted-list"><li style="list-style-type:circle">그쵸 궁극적으로는 Lein 그룹처럼 모든 것을 볼 수 있는 게 맞는데, 우리에게는 Jager 그룹이 더 현 상황에서 참고하기 좋은 것 같구..</li></ul><ul id="1392e869-bf9d-8113-9a72-e41731eb412e" class="bulleted-list"><li style="list-style-type:circle">여담) 뭔가.. 다음에는 키보드.. 위에 소리 없애는 거 가져와야겠다는 생각이 든다.. 적고 싶은 게 너무 많은데 적는 사람은 우리 셋 밖에 없댜.. <ul id="1392e869-bf9d-818d-9aaa-e5e0105f5120" class="bulleted-list"><li style="list-style-type:square">사진찍는 사람도 없어…</li></ul><ul id="1392e869-bf9d-8174-9fe5-ce8546e17ccb" class="bulleted-list"><li style="list-style-type:square">마자… 키스킨 가져올걸 ㅠㅠ 우리도 대본 녹음하고있으니까 모든 걸 적지는 말아볼까용.. .적어야 집중이 잘되지만..</li></ul></li></ul></li></ul><ul id="1392e869-bf9d-8046-951f-eb63e0646913" class="bulleted-list"><li style="list-style-type:disc">핵심 relationship: Ast.10 frequency → SNAP25, Cognitive slope<ul id="1392e869-bf9d-81a3-8759-e9c1a38ed882" class="bulleted-list"><li style="list-style-type:circle">increased Ast10 frequency → synaptic loss, cognitive loss를 일으킨다.</li></ul></li></ul><h3 id="1392e869-bf9d-802c-a3b4-ebf1caab70f6" class="">QnA.</h3><ul id="1392e869-bf9d-80c4-a118-fdf6d2daed1e" class="bulleted-list"><li style="list-style-type:disc">non-sysmtomatic한 환자나 실험 참여자들 중에서 AD에서 synapse에 영향을 주는 astrocyte가 있을 수 있는가? → 아마 진단을 위하여 물어보는 느낌인듯.. <ul id="1392e869-bf9d-819a-afb4-fbeac9b41036" class="bulleted-list"><li style="list-style-type:circle">진단을 받는 사람들도 아직은 cognitive impair하지 않는 경우이다. </li></ul></li></ul><p id="1392e869-bf9d-8086-a616-f4ebb72068d9" class="">여담) Jager 교수님은 엄청 인자한 푸 같이 생기셨다. 얼굴 표정도 그러하시다.. 질문 대답하실 때에도.. </p><p id="1392e869-bf9d-8008-9c1a-f025791fe69b" class="">근데 disease가 다 AD인가..? </p><p id="1392e869-bf9d-80be-8fc0-ce3a63a600f2" class="">
+</p><h2 id="1392e869-bf9d-80fc-8501-f8b81c265969" class="">Neuro-glia interactions shaping the alzheimer&#x27;s cascade (Naomi Habib)</h2><p id="1392e869-bf9d-8069-b246-ed76693aece0" class=""><a href="https://www.nature.com/articles/s41586-024-07871-6">https://www.nature.com/articles/s41586-024-07871-6</a></p><p id="1392e869-bf9d-8004-ad4e-d7116956f249" class="">근데 아까 Ed Lein 발표에서는 Pvalb가 감소했는데, 여기에서는 PVALB 증가가 알츠하이머 진행될수록 진행됨.. SST는 동일하게 감소 </p><ul id="1392e869-bf9d-809d-b267-d9ab7de7ad14" class="bulleted-list"><li style="list-style-type:disc">ROSMAP cohort.</li></ul><ul id="1392e869-bf9d-80fb-bf87-ce4f275b0752" class="bulleted-list"><li style="list-style-type:disc">BEYOND algorithm.</li></ul><ul id="1392e869-bf9d-8023-a750-d3e540b29617" class="bulleted-list"><li style="list-style-type:disc">AD에서의 main focus -&gt; susceptibility / vulnerability of SST+ neuron.</li></ul><ul id="1392e869-bf9d-8088-a3ed-e2c07102e387" class="bulleted-list"><li style="list-style-type:disc">Glial dynamics -&gt; ? 어떻게 neuronal과 교류?</li></ul><p id="1392e869-bf9d-80bf-8276-d423c3760e71" class="">
+</p><ul id="1392e869-bf9d-80c9-b2e5-e13b374aacb5" class="bulleted-list"><li style="list-style-type:disc">State A다, B다 discrete하게 구분하는 게 아니라 continuous하게 modelling.</li></ul><ul id="1392e869-bf9d-80ef-b4ce-f8eb22638b00" class="bulleted-list"><li style="list-style-type:disc">coespression between gene programs와 같은 것을 보는 것임. <p id="1392e869-bf9d-81b4-9927-fe0158168dfb" class="">cell x gene → progrma x gene * cell x program</p><ul id="1392e869-bf9d-81b7-8083-d43938f5e155" class="bulleted-list"><li style="list-style-type:circle">ex) microglia that express heat shock, or … or both</li></ul></li></ul><ul id="1392e869-bf9d-804a-b559-cca3dffa15bf" class="bulleted-list"><li style="list-style-type:disc">cell type을 cluster로 나눠서 특정 cluster는 이렇다, 쟤는 이렇다가 아니라 전체적인 continuous pattern을 보는 듯함. 거의 subtype들이 하나의 덩어리같이.<ul id="1392e869-bf9d-813e-95b8-e2b63e3d1fe8" class="bulleted-list"><li style="list-style-type:circle">모든 cells들이 program들의 조합으로 이뤄져잇고 disease, aging 등 program에 따라 활성되는 파트가 다름</li></ul></li></ul><figure id="1392e869-bf9d-806b-927d-da4c298bca4b" class="image"><a href="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/IMG_7045.jpeg"><img style="width:4032px" src="Session%201%20Neurodevelopment%20&amp;%20neurodegeneration%201392e869bf9d8081a2c3cf49d46539b1/IMG_7045.jpeg"/></a></figure><ul id="1392e869-bf9d-8060-8e84-ddb50205ad44" class="bulleted-list"><li style="list-style-type:disc">근데 내려가는게 뭐고 올라가는게 뭔지가 제대로 안보이네… down early랑 down late랑 뭔지 좀 분명하게 와닿지 못하는 느낌…</li></ul><ul id="1392e869-bf9d-8080-a5aa-d5e5c9fccf21" class="bulleted-list"><li style="list-style-type:disc">신기한 것은 AD trait가 올라갈 수록 neuron에서 cell cycle이 올라갔음.</li></ul><p id="1392e869-bf9d-80c3-8b33-fae810fcdf00" class="">여담) 알파폴드는 노벨화학상 어제 받았다고 인경님이 말씀하신 것 같은데 brain에서는 아주 막 많이 활용하고 그런 느낌은 아니네요…!!</p><p id="1392e869-bf9d-80ba-9419-d1cdaa1d77eb" class="">아직 protein level까지 가지도 못 한 것일까요…ㅋㅋ</p><p id="1392e869-bf9d-80b2-a8d7-e3ae01531b3e" class="">질문) amyloid-beta → tau protein → decline 여기서 amyloid beta, tau protein이 Linear한 관계인지 궁금하다. 뭔가 AD의 두 가지 가설? 그런 걸로 생각했었는데…. 찬희님이 amyloid-beta만 본것처럼.</p><ul id="1392e869-bf9d-8075-9a12-e6091336d664" class="bulleted-list"><li style="list-style-type:disc">early exc 감소 → micro homeostatic 감소 ↔ early exc 증가 → disease micro 증가<ul id="1392e869-bf9d-81e7-9c38-d3286b613ec3" class="bulleted-list"><li style="list-style-type:circle">early exc 감소와 disease micro, astro 증가 → mitochondrial translation 연관</li></ul></li></ul><ul id="1392e869-bf9d-80e7-8660-ebf0a6b4ec2b" class="bulleted-list"><li style="list-style-type:disc">late exc 감소 → astro homeostatic 감소 ↔ late exc 증가 → disease astrocytes 증가</li></ul><ul id="1392e869-bf9d-80af-ab4d-dbb605dfd45a" class="bulleted-list"><li style="list-style-type:disc">limite adult brain model → ex vivo ⇒ human organotypic slice cultures - 3d model of adult brain<ul id="1392e869-bf9d-8131-98b6-e982eeb5252b" class="bulleted-list"><li style="list-style-type:circle">QnA: 이거 어디에 키우는 건가요? <ul id="1392e869-bf9d-81b9-b22f-cdc9cc43df2f" class="bulleted-list"><li style="list-style-type:square">이거 자라게 할 때 실제 인간의 csf를 사용함</li></ul><ul id="1392e869-bf9d-813b-a5ce-f904872956ea" class="bulleted-list"><li style="list-style-type:square">Cerebrospinal fluid (CSF) is <strong>an ultrafiltrate of plasma contained within the ventricles of the brain and the subarachnoid spaces of the cranium and spine</strong>.</li></ul></li></ul></li></ul><ul id="1392e869-bf9d-80b3-8512-dd54fb71d30a" class="bulleted-list"><li style="list-style-type:disc">Microglia, astrocytes → neuronal survial 관여 → AD pathology 이어짐<p id="1392e869-bf9d-81ba-8422-f541d7421c36" class="">Continuous modeling approach of the cell types </p></li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

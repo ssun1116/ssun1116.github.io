@@ -1,0 +1,686 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Keynote - Sten Linnarsson</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1382e869-bf9d-80ce-b51d-c1f31fbc2386" class="page sans"><header><h1 class="page-title">Keynote - Sten Linnarsson</h1><p class="page-description"></p></header><div class="page-body"><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="1392e869-bf9d-80e3-be12-c1ef4994166a"><div style="font-size:1.5em"><span class="icon">🔖</span></div><div style="width:100%"><p id="6a7bf84e-7548-44fe-b3a6-72bff99f26be" class="">이 연구에서 흥미로운 것은, neurodevelopment를 규명한 후 다음 스텝으로 정한 것이 brain tumor연구라는 점. 꼭 neurological disorder를 연구하는 것이 아니었다.<br/>그리고 spatial 연구는 꼭 필요한 부분이라고 생각 → 연구의 완성도를 확 높인다.<br/></p></div></figure><h1 id="1382e869-bf9d-802e-a8ed-fa654c7f6e66" class="">Keynote:  Futile wound healing drives ‘mesenchymal’ cell states in glioblastoma</h1><p id="1382e869-bf9d-8003-8bec-e5e7c7391757" class=""><strong><a href="https://www.vibconferences.be/speaker/sten-linnarsson">Sten Linnarsson</a></strong><strong>, </strong><em><strong>Karolinska Institute, SE</strong></em></p><p id="1382e869-bf9d-80ed-8af0-e46abf1d53eb" class="">여담) 오늘 발표하는 내용 처음 발표하는 거라 함. bioRxiv에도 없음. 요 발표의 논문 언제 나올까?</p><ul id="1382e869-bf9d-80d1-a25d-f2781f242aad" class="bulleted-list"><li style="list-style-type:disc">Brain cancer</li></ul><ul id="1382e869-bf9d-803d-a032-f12c0887a65c" class="bulleted-list"><li style="list-style-type:disc">과거 얘기도 하겠다.</li></ul><figure id="1382e869-bf9d-8096-aec6-ca677955af17" class="image"><a href="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image.png"><img style="width:4032px" src="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image.png"/></a></figure><h2 id="1382e869-bf9d-809c-be8e-eae83565117d" class="">Development of single-cell omics</h2><ul id="1382e869-bf9d-8064-b85c-e37d39a0fb1b" class="bulleted-list"><li style="list-style-type:disc">싱글셀 연구의 역사 흐름 → 15년 이상.</li></ul><ul id="1382e869-bf9d-80df-9c2b-c5742d84d310" class="bulleted-list"><li style="list-style-type:disc">시작을 neurotrophic factor 공부로 했다<ul id="1382e869-bf9d-8033-a51e-e921da14bbc3" class="bulleted-list"><li style="list-style-type:circle">support neuron as they deveop + learning, memory.</li></ul><ul id="1382e869-bf9d-80b3-b5e3-e9109c8216c9" class="bulleted-list"><li style="list-style-type:circle">brain so complex → 볼 수 있는게 너무 적었어.</li></ul></li></ul><ul id="1382e869-bf9d-80fe-98d5-d6edf59fee4e" class="bulleted-list"><li style="list-style-type:disc">포닥 안하고 유전자 발현 측정하는 기술 개발하는 회사를 차렸다 → 싱글셀.  develop scRNA-seq.</li></ul><figure id="1690bad3-974f-41d5-9b8e-9d077753bd6a" class="image"><a href="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/90cea8b4-5e0b-4786-a8c3-8f3f99787752.png"><img style="width:562.8765792031099px" src="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/90cea8b4-5e0b-4786-a8c3-8f3f99787752.png"/></a></figure><ul id="1382e869-bf9d-807a-8eb1-e1841831186c" class="bulleted-list"><li style="list-style-type:disc">2009: 5개정도밖에 보지 못했다. 완전 초창기 개념. </li></ul><ul id="1382e869-bf9d-8003-a873-f3a94229dc83" class="bulleted-list"><li style="list-style-type:disc">2011: 96개정도 세포 봄. Discovery of de novo cell type. Transcriptome → identity.<ul id="1382e869-bf9d-80af-907f-e6db64d1caef" class="bulleted-list"><li style="list-style-type:circle">백만개의 세포를 볼 수 있는 미래를 꿈꿨다.</li></ul><ul id="05c3b789-a349-486f-b46d-4e0bca989b7f" class="bulleted-list"><li style="list-style-type:circle">Single-cell RNA-seq is to find a new “cell type”</li></ul><ul id="66bde174-baa8-4fc8-9824-b2415ba54a0c" class="bulleted-list"><li style="list-style-type:circle">초창기 single-cell 연구에서 cell line (ES cell, Neuro 2A)을 가지고 cell type 확인 → cell type specific을 확인한 것<ul id="1382e869-bf9d-8096-88dd-e4dff2cc6fc7" class="bulleted-list"><li style="list-style-type:square">96개 세포로 싱글셀을 했다.</li></ul></li></ul><ul id="0cdfe2a2-aada-4c93-8bf5-6169e167ca87" class="bulleted-list"><li style="list-style-type:circle"><strong>Insensitive</strong>. 아직 완전 초기. Bulk만큼 sensitive하게 하고싶었음 → cell은 bulk만큼 molecule이 많지 않으니 당연하긴 함. 그때는 dropout에 실망했다. 그래도 Transcriptome을 보면서 누가 누군지 알 수 있어서 기뻤다.</li></ul><ul id="1382e869-bf9d-8012-b23d-f6366af3f830" class="bulleted-list"><li style="list-style-type:circle">“Identity dominates the signal in transcriptome.”</li></ul></li></ul><ul id="1382e869-bf9d-800f-a2b7-d5393a8d3b7f" class="bulleted-list"><li style="list-style-type:disc">2023: Siletti et al → adult human brain atlas (with Ed Lein) / Braun et al → 1st trim. single-cell RNA-seq atlas 등. human brain deveopment → initial repertoire or neuronal cell types. </li></ul><ul id="1382e869-bf9d-80ef-afee-e12e9f9a17a7" class="bulleted-list"><li style="list-style-type:disc"><strong>2024: Mannes et al. Chromatin accessibility atlas.</strong><ul id="1382e869-bf9d-803e-98ba-f6ca044d7265" class="bulleted-list"><li style="list-style-type:circle"><strong>Parallel atlas. first trimester. Linnarsson 랩 논문임. </strong><figure id="1392e869-bf9d-80b2-8d5d-dbbffeea1272" class="image"><a href="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/Screenshot_2024-11-09_at_12.43.59_AM.png"><img style="width:651.984375px" src="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/Screenshot_2024-11-09_at_12.43.59_AM.png"/></a></figure></li></ul></li></ul><ul id="1382e869-bf9d-80e3-a9b0-d43b870b3a24" class="bulleted-list"><li style="list-style-type:disc">지금은 어떤 연구를?<ul id="a3963ecc-fd03-4c52-9f80-35ecffb11b9f" class="bulleted-list"><li style="list-style-type:circle">Brain cancer로 focus switch. <ul id="c900b2f2-7632-4758-ba7d-4e82a76a55c9" class="bulleted-list"><li style="list-style-type:square">Normal brain은 모았고 이제 brain cancer 본다 → apply.</li></ul><ul id="1382e869-bf9d-80ea-b99f-f2bb7d293284" class="bulleted-list"><li style="list-style-type:square">Gliblastoma의 cellular diversity, heterogeneity. </li></ul><figure id="1382e869-bf9d-80f9-99ef-c043446a090f" class="image"><a href="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image%201.png"><img style="width:619.984375px" src="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image%201.png"/></a></figure><ul id="9f0a8d53-1077-4d95-bab6-418892e62773" class="bulleted-list"><li style="list-style-type:square">Futile wound-healing drives ‘mesenchymal; states in glioblastoma</li></ul><ul id="eba89bf7-1371-4d41-aab2-7306a6c5b9a8" class="bulleted-list"><li style="list-style-type:square"><strong>세가지 현상 → invasive growth, necrosis, vascular proliferation.</strong></li></ul></li></ul></li></ul><h2 id="1382e869-bf9d-80f8-831d-f345728fdfd3" class="">Glioblastoma - Mystery of Tousseu’s sign</h2><ul id="1382e869-bf9d-8058-9be9-f0178afa4e5d" class="bulleted-list"><li style="list-style-type:disc">Physician. Paris 병원. 중요한 clinical sign을 발견: OSE sign.<ul id="1382e869-bf9d-80b2-8ba9-d080b4d4742e" class="bulleted-list"><li style="list-style-type:circle">환자가 살아있으면 body inside를 볼 방법이 없다. external signal을 보는 것이 중요.</li></ul><ul id="1382e869-bf9d-8072-a313-f30a864bda15" class="bulleted-list"><li style="list-style-type:circle">이거는 blood clot을 찾음 → 특별한 이유 없이 붓는다: undiscovered tumor의 sign일수도.</li></ul><ul id="1382e869-bf9d-80d3-b7a1-ffd9adb1f832" class="bulleted-list"><li style="list-style-type:circle">이유는 모르지만 cancer (neuroblastoma) 특히 blood coagulation이 많이 발견되었음.</li></ul><ul id="1382e869-bf9d-8088-a4d8-e43247160f26" class="bulleted-list"><li style="list-style-type:circle">Glibolastoma → blood coagulation이 특징.</li></ul></li></ul><figure id="1382e869-bf9d-8046-94db-e075fb20b02d" class="image"><a href="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image%202.png"><img style="width:675.9921875px" src="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image%202.png"/></a></figure><ul id="1382e869-bf9d-80db-9a5b-e15b69f2e559" class="bulleted-list"><li style="list-style-type:disc">The prevailing view of cell states in glioblastoma<ul id="7cbb81e5-6966-41f0-be74-13febc81cd4b" class="bulleted-list"><li style="list-style-type:circle"><strong>4 canonical states (OPC-like, NPC-like, AC-like, MES-like)</strong><ul id="a34cc5c4-47a3-4f71-b241-7c34636a20b1" class="bulleted-list"><li style="list-style-type:square">MES like state → myeloid cells (→ macrophage), hypoxia, relapse, resistance 연관</li></ul><ul id="1382e869-bf9d-80a8-bb2a-da55c64189bd" class="bulleted-list"><li style="list-style-type:square">실제 cell type은 아니고. convert되기도 하고… 비슷한 것.</li></ul><ul id="1382e869-bf9d-8051-8ecb-f8522ab24334" class="bulleted-list"><li style="list-style-type:square">특히 MES-like → myeloid 많고, hyper toxic 특징. Tumor resistance. </li></ul><ul id="85228861-aa3f-40bf-9367-bc5e95de9442" class="bulleted-list"><li style="list-style-type:square"><strong>Immature brain cell type과 유사</strong></li></ul><ul id="1382e869-bf9d-80e2-bcf8-e4f689128e1e" class="bulleted-list"><li style="list-style-type:square">근데 MES-like… progenitor에서 오지도 않고… tumor이 development recipulate하는건지 잘 모르겠는 상태이다.</li></ul></li></ul><ul id="c5e2dcb2-1e04-4e35-9e6d-8efdb6187d22" class="bulleted-list"><li style="list-style-type:circle">State of glioblastoma를 규명하기 위해서 계속 노력 중 (Chanonch-Myers et al.2022)<ul id="1382e869-bf9d-80cc-ac8d-e2ddadada41f" class="bulleted-list"><li style="list-style-type:square">Marker genes 리스트 확보해서 확인해봤음.</li></ul></li></ul></li></ul><ul id="1382e869-bf9d-8099-80f7-d2f3f37cb978" class="bulleted-list"><li style="list-style-type:disc">Mesenchymal like cell in GBM → mesenchylar하지도, EMT같지도 않았다.<ul id="a880464b-b000-4c58-b90f-c36d1ba0f2f6" class="bulleted-list"><li style="list-style-type:circle">DCN expression 강한 것이 특징. 다른 Neftel에서 정의된 marker는 발현되지 않음. 그다지 specific하게 발현되지가 않고있다. </li></ul><ul id="213bc7eb-e29b-4cbf-8e91-e85cb389937c" class="bulleted-list"><li style="list-style-type:circle">Tabula sapiens에서 확인<ul id="7e742ed2-f5e5-4c4f-a11b-2b79c3a60c0e" class="bulleted-list"><li style="list-style-type:square"><a href="https://tabula-sapiens.sf.czbiohub.org/">https://tabula-sapiens.sf.czbiohub.org/</a></li></ul><ul id="62627c64-1940-479d-87d0-d9abf20b8075" class="bulleted-list"><li style="list-style-type:square">DCN → fibroblast, MSCs에서 강하게 나옴 (Neftal 2019의 MES-like에서는 관찰되지 않음)</li></ul></li></ul></li></ul><ul id="1382e869-bf9d-808b-bd7b-c90d6526c4ec" class="bulleted-list"><li style="list-style-type:disc">대부분의 MES-like genes은 coagulation (혈액응고), hemostasis (지혈) 등 혈액 관련 pathway 연관 유전자들<ul id="ade2a490-b6b4-4559-bdd0-917e5f3826fd" class="bulleted-list"><li style="list-style-type:circle">MES-like genes → induced during wound healing.</li></ul><ul id="7b99307b-0ec5-4496-9359-0263becbe5a9" class="bulleted-list"><li style="list-style-type:circle">Wound healing 상처 치유 → 파괴된 조직이 새로운 조직으로 대체되는 과정</li></ul><ul id="1382e869-bf9d-8030-97e7-e34bf72501bc" class="bulleted-list"><li style="list-style-type:circle">dynamic하게 발현이 조절되는 패턴이 있다.</li></ul></li></ul><ul id="1382e869-bf9d-8000-be68-ec5aec9bc0bd" class="bulleted-list"><li style="list-style-type:disc">GBM ↔ wound healing / coagulation. How associated?<ul id="2ae0f440-ece0-4806-8f3c-c1b865a129aa" class="bulleted-list"><li style="list-style-type:circle">Where is the MES-like cells?<ul id="f1bf0911-98ae-495e-9333-79eb2dae2a5c" class="bulleted-list"><li style="list-style-type:square">Necrotic core를 중심으로 high/low c, peripheral, normal tissue로.</li></ul><ul id="e7194a0a-5781-4c66-8614-13544b1a7d54" class="bulleted-list"><li style="list-style-type:square">Tumor cell → 대부분 high fluorescent region / necrotic core 유래.<ul id="02388924-2789-4801-8ea5-4726635918f6" class="bulleted-list"><li style="list-style-type:disc">추가로 low fluorescent, periphery에도 존재.</li></ul></li></ul><ul id="ce7c011d-3510-4daf-b3e6-be6b851b275b" class="bulleted-list"><li style="list-style-type:square">대부분 Immune cell → tumor 구역별로 확연히 discrete한 pattern.<ul id="6ec73134-309e-4228-9d6c-d7554a8dca8e" class="bulleted-list"><li style="list-style-type:disc">Core, high: TAM (macrophage)</li></ul><ul id="22ad4854-2c19-4c5f-8549-8aa94d0cba41" class="bulleted-list"><li style="list-style-type:disc">Low, periphery: Microglia (normal-looking) → 여기저기서 모여든다.<ul id="f9e1f487-a5c6-436b-99bd-b77b1bad00d2" class="bulleted-list"><li style="list-style-type:circle">Blood 타고, microglia가 여기저기서 들어온다.</li></ul></li></ul></li></ul><ul id="a61b99dd-3069-4a8a-a9a9-cdf4e803ffcf" class="bulleted-list"><li style="list-style-type:square">ODC → 골고루.</li></ul></li></ul></li></ul><ul id="1382e869-bf9d-80e3-b8d3-e95275ca6386" class="bulleted-list"><li style="list-style-type:disc">핵심<ul id="46eee05a-6139-4bf1-8b13-55eb03b1c82a" class="bulleted-list"><li style="list-style-type:circle">Zone에 따라서 cell composition 다르게 나타난다.<ul id="1382e869-bf9d-80e6-bca5-e8b0464d957b" class="bulleted-list"><li style="list-style-type:square">High fluorescent → periphery로 갈 때 TAM → Microglia로의 transition.</li></ul></li></ul><ul id="522a2ea7-51e7-4f46-82de-1be7d17faea0" class="bulleted-list"><li style="list-style-type:circle">또한 MES 관련 유전자 발현 강도가 그 Zone에 따라 다르게 나타났다. <ul id="828c64b9-e665-4200-9712-f2645fc08f6f" class="bulleted-list"><li style="list-style-type:square">MES score → necrotic core쪽에서 signature 강함.</li></ul></li></ul><ul id="8f53d69b-05f5-492e-bd04-1e59aba341bb" class="bulleted-list"><li style="list-style-type:circle">MES like genes 반응은 core의 거의 모든 cell type에서 나타남<ul id="ddcec0a7-39de-4a7d-b49c-1d25fbe17a2c" class="bulleted-list"><li style="list-style-type:square">거의 모든 tumor core의 세포가 wonud response를 보임.</li></ul></li></ul><ul id="1382e869-bf9d-8058-a452-d1006e6933f0" class="bulleted-list"><li style="list-style-type:circle">몇몇 유전자만 그런거아냐? → no. consistent 패턴이었다.<ul id="1382e869-bf9d-80a6-adc1-d98f0aa70077" class="bulleted-list"><li style="list-style-type:square"><strong>Nearly every MES-gene responds in every cell type in the core.</strong></li></ul><ul id="1acb52cb-51ea-4ee4-8538-526c6ec125d1" class="bulleted-list"><li style="list-style-type:square">가장 exception 있는게 monocyte 그닥 consistent X.<ul id="1382e869-bf9d-80ae-befa-c45cac0ab576" class="bulleted-list"><li style="list-style-type:disc">Recently arrived to tumor가 이유인 것 같다!</li></ul></li></ul><p id="ec48744f-8fc3-4ba8-8c3c-f951a945b515" class="">
+</p></li></ul></li></ul><h2 id="1382e869-bf9d-8061-a90b-eb4e6107dd53" class="">Enhanced Electric FISH</h2><figure id="1392e869-bf9d-80cf-9c33-c782383abd4b" class="image"><a href="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/Screenshot_2024-11-09_at_1.08.52_AM.png"><img style="width:707.9921875px" src="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/Screenshot_2024-11-09_at_1.08.52_AM.png"/></a></figure><ul id="1382e869-bf9d-8058-a36c-d3d050cd7b9d" class="bulleted-list"><li style="list-style-type:disc">Map cell types → spatial 상에서 관찰</li></ul><ul id="1392e869-bf9d-8069-9014-fa675841cdff" class="bulleted-list"><li style="list-style-type:disc">EE-FISH: Linnarsson 랩에서 개발한 방법.<ul id="1382e869-bf9d-80b8-ace6-e24f9aad3bdc" class="bulleted-list"><li style="list-style-type:circle">tissue section한다음에 electrophoresis하고 tissue 제거해서 읽어냄. </li></ul><ul id="1392e869-bf9d-805d-92d7-d5a86f2803ba" class="bulleted-list"><li style="list-style-type:circle">지금은 많은 좋은 방법들 나옴 → commercial… 이 방법은 low sensitivity가 단점.<ul id="1382e869-bf9d-80ad-b0f3-f8027ad0340f" class="bulleted-list"><li style="list-style-type:square">많은 유전자들 보고 싶어서 방법 개발했다. 900 genes 정도 detect된다…</li></ul></li></ul><ul id="f21df36f-9a92-4cc3-bf29-827edeee62b3" class="bulleted-list"><li style="list-style-type:circle">근데 모든 유전자를 관찰할 수 있는 건 아닌가봐..? 440개 정도 봤네</li></ul></li></ul><ul id="1382e869-bf9d-80ed-b64e-c21adfbb1933" class="bulleted-list"><li style="list-style-type:disc">Zone에 따른 signature 차이 관찰<ul id="c694f0ce-ba53-4df5-bed9-bb20bac0bbf2" class="bulleted-list"><li style="list-style-type:circle">Periphery: Astro &amp; Tumor 일부.</li></ul><ul id="09eb4f29-635f-4e51-bf64-7f530014dfd5" class="bulleted-list"><li style="list-style-type:circle">Low Fluo 에서 high Fluo 갈수록 → 점점 tumor response cell 늘어남</li></ul></li></ul><ul id="1382e869-bf9d-80af-a7f4-e5e06bc2ae3f" class="bulleted-list"><li style="list-style-type:disc">Tissue를 여러개의 specimen으로 다 분류해서 다 FISH분석 (돈 엄청 투자했을듯)<ul id="4c9fef7c-d91f-4ffd-82b6-f4c7e5870b76" class="bulleted-list"><li style="list-style-type:circle">역시나 샘플을 엄청 조사놨다</li></ul></li></ul><figure id="1392e869-bf9d-8062-abca-fcdc437794db" class="image"><a href="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image%203.png"><img style="width:576px" src="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image%203.png"/></a></figure><ul id="1382e869-bf9d-805e-a1ed-f7393803331a" class="bulleted-list"><li style="list-style-type:disc">멀티오믹스에서 하듯이 paitent들의 특성을 분석,</li></ul><ul id="1382e869-bf9d-8055-a1b0-e0b67206de13" class="bulleted-list"><li style="list-style-type:disc">EEFISH 단점 → sensitivity 낮다. 그리고 dot 하나가 cell인지 몰라… staining도 좀 diffuse되어서… <ul id="1382e869-bf9d-80dd-8f39-c1a1906208ea" class="bulleted-list"><li style="list-style-type:circle">GNN먼저 했다. molecular state를 먼저 찾아내려고. mRNA molecule의 community 찾기.</li></ul></li></ul><ul id="1382e869-bf9d-8099-b922-d81f313d7deb" class="bulleted-list"><li style="list-style-type:disc">EEL FISH → Cellular neighborhood 분석 → m-states (mRNA-states)<ul id="280cc493-e9ad-4b37-88be-addf9b6ce3bf" class="bulleted-list"><li style="list-style-type:circle">Molecule states에 따른 network 이루는 것 분석</li></ul></li></ul><ul id="1382e869-bf9d-80ae-8508-f67e5175844f" class="bulleted-list"><li style="list-style-type:disc">여담) FISH는 tumor처럼 layer가 겹겹이 쌓이는 조직에 ideal한 기법인 것 같다. brain에서는 이런 FISH를 사용할만한 필드가 뭐가 있을까? Exc layer 분석은 다 진행됐고…<ul id="00a14264-ea99-4ea5-9691-b62b9e9b7cfc" class="bulleted-list"><li style="list-style-type:circle">Brain disease 중 spatial 상 cellular composition, network가 disease 발병, 진행에 중요한 질병이 또 뭐가 있을까</li></ul><ul id="74129ead-f281-4a46-844c-a920cad678b0" class="bulleted-list"><li style="list-style-type:circle">Brain에서 spatial을 봐야하는 biological pattern이 뭐가 있어?</li></ul></li></ul><ul id="1382e869-bf9d-8053-8c16-d88804046fdc" class="bulleted-list"><li style="list-style-type:disc"><strong>주목할 결과 1: Vessel이 있으면 근처는 MES-like가 없음</strong><ul id="9f48e50e-a064-477b-b6d6-d215f98711ce" class="bulleted-list"><li style="list-style-type:circle"><strong>Vessel이 MES-like state를 repel한다는 것을 암시.</strong></li></ul><ul id="f5aba16b-2937-4d9d-8c97-ef3f58e88c76" class="bulleted-list"><li style="list-style-type:circle">하나의 가설은 VEGFA가 vascular permeability에 영향을 주는데, 그것으로 인하여 vessel을 기준으로 한 쪽에는 정상 세포, 그리고 반대 쪽에는 tumor 발생과 관련된 세포들이 있을 것임.</li></ul><ul id="69927f6c-d3d7-45e4-977c-76705d7563ed" class="bulleted-list"><li style="list-style-type:circle">Tumor는 wound healing과 유사한 mechanism을 취하지만 그게 healing을 위한 게 아님.</li></ul></li></ul><ul id="1382e869-bf9d-8076-bd23-ea62137e8a20" class="bulleted-list"><li style="list-style-type:disc"><strong>주목할 결과 2: Tumor cell states ↔ fetal brain atlas 유사성</strong><ul id="1392e869-bf9d-80b1-ba84-c26026502a7c" class="bulleted-list"><li style="list-style-type:circle">M-state를 기반으로 좀 더 세부적으로 fetal cell typer과의 유사성을 규명했다. More mature, less mature가 모두 존재한다. 구분이 가능함. Tumor가 brain 내의 brain을 만드는 듯한.</li></ul><ul id="f8a4fbc8-e2d2-4219-afb3-7c5878f4d5ca" class="bulleted-list"><li style="list-style-type:circle">Fail하지만 normal brain development의 패턴을 tumor가 계속 수행한다.</li></ul><ul id="00272ff0-8546-4e48-bf38-f3a5d9eeec59" class="bulleted-list"><li style="list-style-type:circle"><strong>MES like는 딱 매칭되는 cell types 없었다</strong></li></ul></li></ul><ul id="1382e869-bf9d-8005-a98e-e9ae3680e33d" class="bulleted-list"><li style="list-style-type:disc">여담) 늘 생각하지만 linarsson 그림 진짜 잘 그린다.. 피피티 진짜 잘 만듦.. 학생들이 잘 만드는 걸까 Linarsson의 미감이 엄청난 것 같다…<ul id="b2b8130c-426d-4ea3-8c54-ca58e492d5c2" class="bulleted-list"><li style="list-style-type:circle">맞아요 뚜렷하고…. 색감도 굳..</li></ul><ul id="ab13a59a-c5ef-43a8-9cd0-c735de843134" class="bulleted-list"><li style="list-style-type:circle">모든 페이지를 다 찍고 싶어요ㅠㅠㅠ 그리고 그래프, 플롯도 결과를 정말 잘 표현하게 그리는 것 같아요 플롯 안에 많은 결과가 있는데 눈에 잘 들어와…</li></ul></li></ul><ul id="1382e869-bf9d-802f-a351-e16fb1c37afa" class="bulleted-list"><li style="list-style-type:disc">여담) Linarsson도 brain cancer를 연구하는 것에 대해 acknowlegment에서 샘플을 제공한 patient에게 감사인사 함. 그게 연구자의 덕목이 맞다</li></ul><figure id="1392e869-bf9d-80a2-8083-caa00b2c28bc" class="image"><a href="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image%204.png"><img style="width:675.984375px" src="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image%204.png"/></a></figure><figure id="1392e869-bf9d-8068-9745-e58670aeff9d" class="image"><a href="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image%205.png"><img style="width:675.984375px" src="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/image%205.png"/></a></figure><ul id="1392e869-bf9d-80dd-97ab-e373eb73a5f8" class="bulleted-list"><li style="list-style-type:disc">Organoid에 대해서도 FISH를 찍었다.</li></ul><figure id="1382e869-bf9d-80c0-ae75-e294bde33f3a" class="image"><a href="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/IMG_7032.jpeg"><img style="width:4032px" src="Keynote%20-%20Sten%20Linnarsson%201382e869bf9d80ceb51dc1f31fbc2386/IMG_7032.jpeg"/></a></figure><h2 id="1382e869-bf9d-8038-a66d-cb03df84d706" class="">QnA</h2><ul id="1382e869-bf9d-80c6-b5b6-d8a770584c5d" class="bulleted-list"><li style="list-style-type:disc">실제 Fibroblast는 어떻게 구분하는가?(upregulation과 cell type 증가?) <ul id="1392e869-bf9d-807a-b8bf-eee4b7e94c45" class="bulleted-list"><li style="list-style-type:circle">Collagen 발현. + Twist, Snail TF.</li></ul><ul id="1e0bcf25-27ed-458f-b9a7-32800b2b7bbc" class="bulleted-list"><li style="list-style-type:circle">ZEB1 같은 유전자들을 많이 주장하기는 하는데, 실제로는 데이터에서 재현이 되지 않았다. </li></ul><ul id="1392e869-bf9d-80f0-be41-f7f3db772a38" class="bulleted-list"><li style="list-style-type:circle">MES tumor → Collagen이 잘 나오진 않았음.</li></ul><ul id="b3e251d4-0144-44bf-b985-12d82c465408" class="bulleted-list"><li style="list-style-type:circle">대부분 tumor는 fibroblast가 많지 않고 MES 안나온다, GBM의 특징</li></ul></li></ul><ul id="1382e869-bf9d-80f3-93e2-e48a03a58504" class="bulleted-list"><li style="list-style-type:disc">Resecting → radical surgery doesn’t help. Resecting all hemisphere → dramatic. Radiotherapy가 몇몇 patient에는 아주 치명적이었다.</li></ul><ul id="1382e869-bf9d-8076-816a-cf64dd358b34" class="bulleted-list"><li style="list-style-type:disc">GBM 10-20% → two mass. normal tissue가 가운데 있다. 유전적으로는 유사함. 따라서 하나의 cell에서 유래된 것이고, Pre-history가 있을 것이다 이런 GBM 생성에 있어서.</li></ul><ul id="1382e869-bf9d-801e-bfea-e11408fb4f1a" class="bulleted-list"><li style="list-style-type:disc">Plasma의 wound healing 기여 → hemorrhage (bleeding) 환자들 중에서 microvascular가 더 높은 환자들 같은 경우에 MES Like tumor에 더 높은 enrichment가 있는 경우가 있는가?<ul id="f6799d29-6bdf-4eae-b5ee-4cd044a8a675" class="bulleted-list"><li style="list-style-type:circle">Confounding factors. Rapid growth일수록 hypoxicity, … 여러 causality 중 하나의 factor.</li></ul></li></ul><p id="1392e869-bf9d-8059-88c0-e92099a5029e" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

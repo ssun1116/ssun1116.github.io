@@ -1,0 +1,686 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Session 3: From Atlassing to therapy</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="13a2e869-bf9d-801b-8f90-fc1e987c46e7" class="page sans"><header><h1 class="page-title">Session 3: From Atlassing to therapy</h1><p class="page-description"></p></header><div class="page-body"><nav id="1422e869-bf9d-80a1-89c1-c7fa3af1f41b" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1422e869-bf9d-8073-b8b7-c574b83302c2">1) Characterizing Diverse Cell Types in the Developing Human Brain and Brain Cancer</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-803d-8b7b-edbb72b45442">Topic 1: Developing and adult brain meta-atlas</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-80e0-8a0f-e7ac2a8f0315">Topic 2: Glioblastoma</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-8095-8b5a-dd24d2561b0b">QnA</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1422e869-bf9d-800f-a5c6-efd6c46aa253">2) Neuron-glial interactions in brain health and disease</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-80d9-9859-d56edccbbe38">Topic 1: Glioma → spatialomeproally patterns &amp; myelination</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-8082-8e97-e5e248c6ee88">QnA</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1422e869-bf9d-8065-a62c-c6901aa6b8ed">3) Enhancer-AAVs enable circuit access across species and circuit selective therapies</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-806a-9259-e5e7cde47bea">Topic 1: Cell type / Region specific enhancer-AAV targeting</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-8036-a70d-dfd34b0eeefd">Topic 2: Disease-context application</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-80a5-976f-ee6888222fbe">QnA.</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1422e869-bf9d-80d1-976c-ee2b7f9fa4aa">4) Spatially resolved single-cell genomics &amp; cell atlas of the brain</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-803f-9120-c3fe3ae5429e">Cell type specific 3D genome genome organization (<a href="https://www.biorxiv.org/content/10.1101/2023.12.04.570024v1">Liu et al., bioRxiv 2023</a>)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-80cb-bef7-c6e359a4293d">QnA</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1422e869-bf9d-8070-99ab-c5c4af33a4db">5) Modeling and repairing the human brain with stem cells</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-80ba-a491-fbd929743b17">Developing cell therapy for Parkinson’s disease</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-8089-a83f-f4461f11805f">Where are we now with hPSC-based trials?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1422e869-bf9d-808a-97d1-db5f3fe72e9c">QnA</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1422e869-bf9d-805c-8fef-e1c02b017fd2">Selected poster: TREM2-dependence of Microglial Activation in Alzheimer&#x27;s Disease</a></div></nav><h2 id="1422e869-bf9d-8073-b8b7-c574b83302c2" class="">1) Characterizing Diverse Cell Types in the Developing Human Brain and Brain Cancer</h2><p id="1422e869-bf9d-80a4-b55f-da445e06abff" class=""><strong><a href="https://www.vibconferences.be/speaker/aparna-bhaduri">Aparna Bhaduri</a></strong><strong> </strong>- <em>University of California, Los Angeles (UCLA), US</em></p><figure class="block-color-orange_background callout" style="white-space:pre-wrap;display:flex" id="1422e869-bf9d-800a-baf0-c546ed01dd93"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="1422e869-bf9d-81d5-8969-cae6841dbfd8" class="">maturation</p><p id="1422e869-bf9d-81be-9ac7-e0d917abba21" class="">read number</p></div></figure><h3 id="1422e869-bf9d-803d-8b7b-edbb72b45442" class="">Topic 1: Developing and adult brain meta-atlas</h3><p id="1422e869-bf9d-80ea-afe7-dbfe336d8106" class="">[Developing Brain 과 adult brain은 큰 차이가 있음]</p><ul id="1422e869-bf9d-80f1-9a7e-d7587b0299ed" class="bulleted-list"><li style="list-style-type:disc">transient cell types </li></ul><ul id="1422e869-bf9d-80a3-9c9b-edb2267a63f2" class="bulleted-list"><li style="list-style-type:disc">Cortical development<ul id="1422e869-bf9d-811d-a3d7-e64da1133374" class="bulleted-list"><li style="list-style-type:circle">Outer radial glia</li></ul><ul id="1422e869-bf9d-810d-ae4e-d8097dbc1b4e" class="bulleted-list"><li style="list-style-type:circle">neurogenesis 끝난 다음에 gliogenesis가 시작됨 <ul id="1422e869-bf9d-8083-bfa2-e4e0600ac79d" class="bulleted-list"><li style="list-style-type:square"><strong>Human susceptibility를 연구하려면 결국 human vs. mouse 차이에 포커스 필요.</strong></li></ul></li></ul><figure id="1422e869-bf9d-80e6-953f-ca27351ffe4a" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image.png"><img style="width:617.9921875px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image.png"/></a></figure></li></ul><ul id="1422e869-bf9d-8057-9c2e-d49d7a25e7a4" class="bulleted-list"><li style="list-style-type:disc">Developmental atlas<figure id="1422e869-bf9d-802b-8d4c-d4822162a876" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%201.png"><img style="width:617.984375px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%201.png"/></a></figure><ul id="1422e869-bf9d-81f6-8fb1-d644fda9cf3c" class="bulleted-list"><li style="list-style-type:circle">pulbic data</li></ul><ul id="1422e869-bf9d-81bb-8923-fbb06129a0a4" class="bulleted-list"><li style="list-style-type:circle">comparison in in vitro </li></ul></li></ul><ul id="1422e869-bf9d-80e2-851c-df59b644deaf" class="bulleted-list"><li style="list-style-type:disc">오늘의 주제<figure id="1422e869-bf9d-80d9-929c-ed2fd9a9fede" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%202.png"><img style="width:617.9765625px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%202.png"/></a></figure><ul id="1422e869-bf9d-8103-aa0b-d31dde94f426" class="bulleted-list"><li style="list-style-type:circle">How do human neural stem cells build human brain</li></ul><ul id="1422e869-bf9d-8172-8ed1-d1822f608d9f" class="bulleted-list"><li style="list-style-type:circle">Why are they devastating in brain cancer</li></ul></li></ul><ul id="1422e869-bf9d-800c-ac2b-fd8856d80eb6" class="bulleted-list"><li style="list-style-type:disc">github) <a href="https://github.com/BhaduriLab/dev-ctx-meta-atlas">https://github.com/BhaduriLab/dev-ctx-meta-atlas</a></li></ul><ul id="1422e869-bf9d-80ee-90f2-dba6c61ae0a6" class="bulleted-list"><li style="list-style-type:disc">96 individual → meta-atlas. Technical variation을 최소화하는 방향으로 데이터 구축하였음.<ul id="1422e869-bf9d-803a-a278-dd03a210e732" class="bulleted-list"><li style="list-style-type:circle">7 dataset collapsed.</li></ul><ul id="1422e869-bf9d-8115-b44d-cc820304b690" class="bulleted-list"><li style="list-style-type:circle">unsupervised clusteirng of cells for each individuals</li></ul><ul id="1422e869-bf9d-81ec-89f8-fd0b73ff5cce" class="bulleted-list"><li style="list-style-type:circle">Identification of each of the modules within the individual </li></ul><ul id="1422e869-bf9d-81d1-ae5a-f534691e0084" class="bulleted-list"><li style="list-style-type:circle">cell type specific과 broad 모두 나타남</li></ul></li></ul><ul id="1422e869-bf9d-80cc-930f-e06421d76006" class="bulleted-list"><li style="list-style-type:disc">Identification gene expression signature within each individuals → integrate meta-module?<figure id="1422e869-bf9d-8012-8b2c-dc7531259513" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%203.png"><img style="width:617.9921875px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%203.png"/></a></figure><ul id="1422e869-bf9d-806a-92c3-ef4c6e0e09d2" class="bulleted-list"><li style="list-style-type:circle">Gene expression signature를 확인 → 각각 cluster마다. 그리고 module화하였다.</li></ul><ul id="1422e869-bf9d-817b-b649-c5d967f906bd" class="bulleted-list"><li style="list-style-type:circle">Meta-module → gene netwroks 비슷하게 기능적으로 연관된 유전자들의 집합인가</li></ul><ul id="1422e869-bf9d-81f8-a04b-d5d681626012" class="bulleted-list"><li style="list-style-type:circle">Gene expression signature라는 것이 무엇일까 → 우리 atlas 분석에서도 이걸 활용 가능?</li></ul></li></ul><ul id="1422e869-bf9d-803f-9d11-c823bb9a37a7" class="bulleted-list"><li style="list-style-type:disc">이후 분석 → meta-module을 가지고 cell type specificity 등을 scoring하여 비교<ul id="1422e869-bf9d-81e3-aa10-cc0099bbebf7" class="bulleted-list"><li style="list-style-type:circle">Adult vs developmental module 만들고자 함<ul id="1422e869-bf9d-8106-87c5-cffa5dde168d" class="bulleted-list"><li style="list-style-type:square">adult atlas도 만듦 → 그 다음에 module 만듦</li></ul><ul id="1422e869-bf9d-81eb-9f14-e540e5d7ddee" class="bulleted-list"><li style="list-style-type:square">adult와 developmental module이 다름 </li></ul></li></ul><ul id="1422e869-bf9d-81ce-9dfa-d4e5a3ac785e" class="bulleted-list"><li style="list-style-type:circle">Developmental cell types들이 adult 보다 더 cell type variation이 컸다?</li></ul><ul id="1422e869-bf9d-81c4-ab7a-dfd3cfedeaa5" class="bulleted-list"><li style="list-style-type:circle">질문) 여기서 모듈이 어떻게 구축된것일까? WGCNA같은 접근으로?</li></ul><ul id="1422e869-bf9d-81e4-a822-ecd579ff8910" class="bulleted-list"><li style="list-style-type:circle">구체적인 분석: Module 20 and FEZF2<ul id="1422e869-bf9d-81b9-8ab6-f2fcf88b92b8" class="bulleted-list"><li style="list-style-type:square">FEZF2 in deep layer neurons </li></ul><ul id="1422e869-bf9d-8182-8f17-fe42f7b445ef" class="bulleted-list"><li style="list-style-type:square">문헌조사, 그리고 activity level을 이용하여 FEZF2가 다른 autism 유전자들을 조절할 것이라고 생각함</li></ul><ul id="1422e869-bf9d-81c9-8a31-d95ce273806f" class="bulleted-list"><li style="list-style-type:square">timing과 evolution에 큰 영향을 줄 것으로 생각이 되며, </li></ul><ul id="1422e869-bf9d-8160-96c1-e424285fdb30" class="bulleted-list"><li style="list-style-type:square">TSZH3에도 큰 영향을 줄 것이다.</li></ul><figure id="1422e869-bf9d-8067-a1df-fbb7c8413c91" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%204.png"><img style="width:589.9921875px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%204.png"/></a></figure></li></ul></li></ul><ul id="1422e869-bf9d-8001-8bfd-fb8f0d316f5b" class="bulleted-list"><li style="list-style-type:disc">FEZF2 → mouse vs. human 다르고, timing이 evolution에 큰 영향 미치는 유전자로 생각됨.</li></ul><ul id="1422e869-bf9d-804c-b035-f0a462b7fddf" class="bulleted-list"><li style="list-style-type:disc">shRNA perturbation → hairpin 감염시켜서 감염된 cell들을 sort out해서 분석.</li></ul><ul id="1422e869-bf9d-80fd-b138-d446dadf2489" class="bulleted-list"><li style="list-style-type:disc">FEZF2 → TSZH3의 epxression으로 immature neruon이 deep layer neurond으로 maturation<ul id="1422e869-bf9d-8124-9250-c3c9bb3d08f0" class="bulleted-list"><li style="list-style-type:circle">Chromatin accessibility<ul id="1422e869-bf9d-815a-ba84-ed8156769478" class="bulleted-list"><li style="list-style-type:square">FEZF2는  activity 없음</li></ul><ul id="1422e869-bf9d-8192-b8f6-c3d30bbfbea1" class="bulleted-list"><li style="list-style-type:square">TSZH3 은 매우 큼</li></ul><ul id="1422e869-bf9d-8152-99d5-dbc178ec69f4" class="bulleted-list"><li style="list-style-type:square">따라서 역할이 다르다고 함 + 순서</li></ul></li></ul><ul id="1422e869-bf9d-8139-a7f0-cd84ec1b911a" class="bulleted-list"><li style="list-style-type:circle">TSZH3는 FEZF2의 chromatin accessibility가 필요했던 것으로 보아 FEZF2가 TSZH3를 activation?</li></ul><ul id="1422e869-bf9d-8029-98a8-cfac4e70863d" class="bulleted-list"><li style="list-style-type:circle"><a href="https://github.com/BhaduriLab/dev-ctx-meta-atlas">https://github.com/BhaduriLab/dev-ctx-meta-atlas</a></li></ul></li></ul><h3 id="1422e869-bf9d-80e0-8a0f-e7ac2a8f0315" class="">Topic 2: Glioblastoma</h3><ul id="1422e869-bf9d-804f-87b1-f1791b98959f" class="bulleted-list"><li style="list-style-type:disc">아마도 이 paper? → <a href="https://www.biorxiv.org/content/10.1101/2024.07.24.604840v1.full">https://www.biorxiv.org/content/10.1101/2024.07.24.604840v1.full</a></li></ul><ul id="1422e869-bf9d-800c-9787-eca0236c9d0e" class="bulleted-list"><li style="list-style-type:disc">분석 전략/방식은 meta-atlas와 비슷한가</li></ul><ul id="1422e869-bf9d-801f-821f-d74de1465a30" class="bulleted-list"><li style="list-style-type:disc">Neftel의 페이퍼와 cell type이 유사함</li></ul><ul id="1422e869-bf9d-8061-9880-d62cfb456113" class="bulleted-list"><li style="list-style-type:disc">Module을 살펴보았을 때, 11이 아주 vascular에 매우 구체적임<ul id="1422e869-bf9d-81d3-a525-e8ed4a3e5bfc" class="bulleted-list"><li style="list-style-type:circle">이 module에 대해서 더 조사하려고 함 vascular에 제한되지 않을 것이라는 생각</li></ul></li></ul><ul id="1422e869-bf9d-8056-9eb5-c81f612c4a89" class="bulleted-list"><li style="list-style-type:disc">이 module이 PDGFRAbeta 로 대표적이므로, 이것을 기준으로 햇 ㅓ세포를 나누고, 그 세포를 scRNA함.<ul id="1422e869-bf9d-814f-9974-c229e8b90928" class="bulleted-list"><li style="list-style-type:circle">이를 통해 astro, OPC 등의 다른 것들에도 expression 되는 것이 드러남. </li></ul><p id="1422e869-bf9d-8150-9f2f-c987ac21c7b0" class="">→ Neurovascular progenitor가 있다고 생각함 </p><ul id="1422e869-bf9d-8120-8e86-fb97d1ac453d" class="bulleted-list"><li style="list-style-type:circle">GBM에서 pericyte 제거할 경우 → GBM tumor가 shrink.</li></ul><ul id="1422e869-bf9d-81c2-a11c-ebec8f8c89eb" class="bulleted-list"><li style="list-style-type:circle">Pericyte와 neuron이 연관이 있다고 생각 </li></ul></li></ul><ul id="1422e869-bf9d-803c-b1fd-ec1b43a8f975" class="bulleted-list"><li style="list-style-type:disc">GBM scRNA-seq → NVP population 발견. 이들을 KO하고자.<ul id="1422e869-bf9d-8115-91be-e547c3883898" class="bulleted-list"><li style="list-style-type:circle">실제 KO 효과로 population 변화 발생, survival extend. </li></ul></li></ul><ul id="1422e869-bf9d-8013-aacc-e1b6bd10249e" class="bulleted-list"><li style="list-style-type:disc">CellTag → DNA barcoding technique (Samantha Morris in WashU)</li></ul><ul id="1422e869-bf9d-8085-a1d9-cb3011639ca5" class="bulleted-list"><li style="list-style-type:disc">Human organoid tumor transplantation (HOTT)<ul id="1422e869-bf9d-81bc-8356-fd7c0828a383" class="bulleted-list"><li style="list-style-type:circle">Patient tumor, </li></ul></li></ul><h3 id="1422e869-bf9d-8095-8b5a-dd24d2561b0b" class="">QnA</h3><ul id="1422e869-bf9d-8038-a733-de5cd171f8cd" class="bulleted-list"><li style="list-style-type:disc">TSZH3 → 이걸 KO organoid에서 다시 살리면 다시 layer 5가 생김?<ul id="1422e869-bf9d-81f6-9724-c25c4dd11e97" class="bulleted-list"><li style="list-style-type:circle">아주 좋은 질문이다. 그러나 아직 실험 해보진 않음. 논리적으로 다음 단계에서 해야 할 실험이라고 생각됨. </li></ul></li></ul><ul id="1422e869-bf9d-806b-84a5-c486c061cebd" class="bulleted-list"><li style="list-style-type:disc">Brain cancer에서 immunotherapy가 가장 중요한 것 같은데, 그것에 대한 의견은 어떤가 <ul id="1422e869-bf9d-81b0-83ed-dce3a5035aba" class="bulleted-list"><li style="list-style-type:circle">immunotherapy tissue를 얻는 중이다. </li></ul><ul id="1422e869-bf9d-81ac-bc53-ffb15f526cac" class="bulleted-list"><li style="list-style-type:circle">근데 이 것에 대해서 다양한 방식으로 암이 반응 해서, 그것을 cell type specific한 패턴을 살펴봐야 한다고 생각하는 중이다. </li></ul><p id="1422e869-bf9d-8152-b709-c1877dcbc23a" class="">
+</p></li></ul><h2 id="1422e869-bf9d-800f-a5c6-efd6c46aa253" class="">2) Neuron-glial interactions in brain health and disease</h2><p id="1422e869-bf9d-802f-934e-c181b70afd4f" class=""><strong><a href="https://www.vibconferences.be/speaker/michelle-monje">Michelle Monje</a></strong><strong> - </strong><em>Stanford University &amp; Howard Hughes Medical Institute, US</em></p><p id="1422e869-bf9d-8065-828c-ff47a10b3697" class="">→ 찾아보니 Glioma 연구에 진심이신 듯</p><h3 id="1422e869-bf9d-80d9-9859-d56edccbbe38" class="">Topic 1: Glioma → spatialomeproally patterns &amp; myelination</h3><ul id="1422e869-bf9d-80e1-9983-ca02eea0a4b8" class="bulleted-list"><li style="list-style-type:disc">Gliomalignancy → predictable spatiotemporal pattern.<ul id="1422e869-bf9d-8136-9d84-f24be5f93063" class="bulleted-list"><li style="list-style-type:circle">4 year old에서는 눈쪽 (optic glioma) → 6 year old (pons), 10 year old (thalamus), 14 year old (hemispheric)으로 발전<ul id="1422e869-bf9d-8136-8103-da17338b87a2" class="bulleted-list"><li style="list-style-type:square">4 year → 생존은 가능하나 severe symptom을 남김 (blindness 등)</li></ul><ul id="1422e869-bf9d-812e-aaf8-fa73899262ef" class="bulleted-list"><li style="list-style-type:square">6 year → infiltrate. nervous system 전체에 퍼져서 fatal.</li></ul></li></ul></li></ul><ul id="1422e869-bf9d-80d2-9af9-dd2764e055e2" class="bulleted-list"><li style="list-style-type:disc">Developmental processes?<ul id="1422e869-bf9d-81f1-8ecb-e5cfc1ee0180" class="bulleted-list"><li style="list-style-type:circle">Myelination → 3rd trim.때부터 birth 이후 postnatal부터 develop 확장</li></ul><ul id="1422e869-bf9d-81f4-b026-eed3a04b3730" class="bulleted-list"><li style="list-style-type:circle">intercortical 영역은 childhood부터 young adult까지</li></ul></li></ul><ul id="1422e869-bf9d-8081-b8fd-fcfac75c85ab" class="bulleted-list"><li style="list-style-type:disc">Childhood 때 glioma → myelination 이상 (pons, )<ul id="1422e869-bf9d-815f-bdfe-c071b78b58ef" class="bulleted-list"><li style="list-style-type:circle">Glioma myelintaion → opc 상태와 유사</li></ul></li></ul><ul id="1422e869-bf9d-805c-8af7-c3b6c0b8cb2e" class="bulleted-list"><li style="list-style-type:disc">Main question. OPC의 proliferation을 일으키는 것은 무엇인가? Neuron이 영향미치나?<ul id="1422e869-bf9d-81bc-a3f5-ede85d511d7b" class="bulleted-list"><li style="list-style-type:circle">Neuronal activity가 영향을 미치나 아님 OPC 발달은 개별적인가,</li></ul><ul id="1422e869-bf9d-8146-895d-fab1e5e94821" class="bulleted-list"><li style="list-style-type:circle">myelination은 plastic and adpatable 한가</li></ul><ul id="1422e869-bf9d-8149-82a5-cee287706b4d" class="bulleted-list"><li style="list-style-type:circle">Neural-glial interaction.</li></ul></li></ul><ul id="1422e869-bf9d-8094-87b4-ff016792977f" class="bulleted-list"><li style="list-style-type:disc">Neuroanl activity가 OPC proliferation, myelination 유발</li></ul><ul id="1422e869-bf9d-804f-8402-e3da41290cd3" class="bulleted-list"><li style="list-style-type:disc">Myelination → attentoin, memory, learning 기능 관여</li></ul><ul id="1422e869-bf9d-80a4-91ba-f637aac3fbc3" class="bulleted-list"><li style="list-style-type:disc">Optic neural activity → optic glioma에서 tumor size를 키우고 initiation하는데 영향을 끼침</li></ul><ul id="1422e869-bf9d-80f5-8146-f905fffaa26f" class="bulleted-list"><li style="list-style-type:disc">NLGN3 → glioma growth에 driving gene, breast cancer에선 상관없었고 glioma에서만 영향력이 엄청났음<ul id="1422e869-bf9d-81e6-8667-fb7eeb6ee560" class="bulleted-list"><li style="list-style-type:circle">NLGN3는 postsynaptic cells에서신호 전달 받은 다음 FAK → SRC/RAS/PI3K-mTOR pathway 자극하는데 이 때 synapse-related genes들이 up-expressed 되는 거 확인</li></ul><ul id="1422e869-bf9d-81b9-9ff3-d5712db092a9" class="bulleted-list"><li style="list-style-type:circle">관련 paper) <a href="https://www.nature.com/articles/s41586-019-1563-y">https://www.nature.com/articles/s41586-019-1563-y</a></li></ul></li></ul><ul id="1422e869-bf9d-807b-a6b9-e04ade97b8a9" class="bulleted-list"><li style="list-style-type:disc">Barron et al., unpublished에서는 neuron-glial 중에서도 GABAergic ↔ Oligo → glioma cells 관계를 보는 듯</li></ul><h3 id="1422e869-bf9d-8082-8e97-e5e248c6ee88" class="">QnA</h3><ul id="1422e869-bf9d-80e3-b395-e6287eb24eb4" class="bulleted-list"><li style="list-style-type:disc">Macrophage 역할 물어본 듯<ul id="1422e869-bf9d-8192-a824-d9fa5b4ce149" class="bulleted-list"><li style="list-style-type:circle">Tumor environment에 영향 끼침? preprint에서 다뤘으니까 나중에 그거 봐달라?</li></ul></li></ul><p id="1422e869-bf9d-80df-a484-f349c019be22" class="">여담) Keystone symposium에서 cancer neuroscience 컨퍼런스 개최하니까 많이 신청해달라고 함 → 이분이 organizer인 듯?! 엄청난 분이셨다…!</p><h2 id="1422e869-bf9d-8065-a62c-c6901aa6b8ed" class="">3) Enhancer-AAVs enable circuit access across species and circuit selective therapies</h2><p id="1422e869-bf9d-803e-a479-d6b1be5f7262" class=""><strong><a href="https://www.vibconferences.be/speaker/boaz-levi">Boaz Levi</a></strong><strong> - </strong><em>Allen Institute for Brain Science, US</em></p><figure id="1422e869-bf9d-8072-bed0-e878461ea770" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%205.png"><img style="width:645.984375px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%205.png"/></a></figure><p id="1422e869-bf9d-80aa-b998-da8ffe05d9c5" class="">오늘 소개한 papers &amp; tools<div class="indented"><p id="1422e869-bf9d-8192-b9a2-f52480a49678" class="">1. <a href="https://www.biorxiv.org/content/10.1101/2024.06.10.597244v3.full">https://www.biorxiv.org/content/10.1101/2024.06.10.597244v3.full</a></p><ol type="1" id="1422e869-bf9d-8183-8532-e089cb5a7d9f" class="numbered-list" start="2"><li><a href="https://www.biorxiv.org/content/10.1101/2024.09.27.615553v1.full">https://www.biorxiv.org/content/10.1101/2024.09.27.615553v1.full</a></li></ol><ol type="1" id="1422e869-bf9d-81a1-808c-d9967e59d80a" class="numbered-list" start="3"><li><a href="https://www.biorxiv.org/content/10.1101/2024.07.30.605864v1.full">https://www.biorxiv.org/content/10.1101/2024.07.30.605864v1.full</a></li></ol><ol type="1" id="1422e869-bf9d-8143-a7e7-d6f8325a2a9d" class="numbered-list" start="4"><li><a href="https://portal.brain-map.org/genetic-tools/genetic-tools-atlas">https://portal.brain-map.org/genetic-tools/genetic-tools-atlas</a></li></ol></div></p><h3 id="1422e869-bf9d-806a-9259-e5e7cde47bea" class="">Topic 1: Cell type / Region specific enhancer-AAV targeting</h3><ul id="1422e869-bf9d-8023-a1f7-d63c40f47ca4" class="bulleted-list"><li style="list-style-type:disc"><strong>Tools to target classes (based on gene expression?)</strong><ul id="1422e869-bf9d-8089-93d8-fe6325533940" class="bulleted-list"><li style="list-style-type:circle">Enhancer-centered approach</li></ul></li></ul><ul id="1422e869-bf9d-80a2-a552-cc233b4e36f1" class="bulleted-list"><li style="list-style-type:disc">Selective transcription → rely on open chromatin. Regulatory element accessibility.<ul id="1422e869-bf9d-8090-b87e-cebc6ba6e675" class="bulleted-list"><li style="list-style-type:circle">ATAC-seq. Accessibiltiy to transposable element. Open chromatin 지역 찾는다.</li></ul><ul id="1422e869-bf9d-809c-83ce-e275da08d95f" class="bulleted-list"><li style="list-style-type:circle">Gene expression + Epigenetic → putative enhancer elements.</li></ul><ul id="1422e869-bf9d-8188-8308-e8a32cd05843" class="bulleted-list"><li style="list-style-type:circle">Collectiion of putative enhancer elements at different cell types.</li></ul><figure id="1422e869-bf9d-80e1-90fa-d8d5802191c5" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%206.png"><img style="width:617.9921875px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%206.png"/></a></figure></li></ul><ul id="1422e869-bf9d-8074-b895-c701024a99d5" class="bulleted-list"><li style="list-style-type:disc">Enhancer AAV → screen for function.<figure id="1422e869-bf9d-8026-a849-d02ef787cd4c" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%207.png"><img style="width:617.984375px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%207.png"/></a></figure><ul id="1422e869-bf9d-81b3-a8cd-df30f7965198" class="bulleted-list"><li style="list-style-type:circle">Specific peak 찾고, AAV로 전달, 툴 사용해서 validation (ex. scRNA-seq)<ul id="1422e869-bf9d-807e-9110-d5444f9e9232" class="bulleted-list"><li style="list-style-type:square">selective expression. </li></ul></li></ul></li></ul><ul id="1422e869-bf9d-80df-b7d5-fa64adc88489" class="bulleted-list"><li style="list-style-type:disc">AAV —&gt; 전 지역 cover 가능. Specific하게 region / cell type을 target하는 것도 가능함.<figure id="1422e869-bf9d-8070-9475-f1e8b1b1ff1e" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%208.png"><img style="width:617.984375px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%208.png"/></a></figure><ul id="1422e869-bf9d-8151-9ae9-da36d67d0404" class="bulleted-list"><li style="list-style-type:circle">Cell type specific enhancer-AAV vector 사용 (glial cell도 가능)</li></ul></li></ul><ul id="1422e869-bf9d-8036-abd4-d6a420ce9ab9" class="bulleted-list"><li style="list-style-type:disc">언제 enhancer가 restrict the gene expression을 하는가?</li></ul><ul id="1422e869-bf9d-8046-a1ee-d372ffdaf849" class="bulleted-list"><li style="list-style-type:disc">Enhancer → list 제공하고자 한다. 오늘 톡에서. Collections of enhancers → in review, BioRxiv 상태에 있음.</li></ul><ul id="1422e869-bf9d-80e5-9f8d-c95fa3222d87" class="bulleted-list"><li style="list-style-type:disc">Enhancer-AAV → 어떤 게 특정 tissue에서 발현되고 어떤 cell type 이랑 매칭되나… 그런 걸 보는 것 같음. </li></ul><ul id="1422e869-bf9d-8103-9ee5-eefbfbe8a891" class="bulleted-list"><li style="list-style-type:disc">AAV로 Promoter를 타겟하는 것은 매우 어렵다.</li></ul><ul id="1422e869-bf9d-8073-91a2-f4b9445c479c" class="bulleted-list"><li style="list-style-type:disc">Enhancer들을 여러가지로 테스트하면서 selective target을 찾고자한다는 것 같음.</li></ul><figure id="1422e869-bf9d-80c1-8305-f35ba5a56780" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%209.png"><img style="width:645.9921875px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%209.png"/></a></figure><ul id="1422e869-bf9d-8001-a446-e44b424bb260" class="bulleted-list"><li style="list-style-type:disc">striatal enhancer는 evolutionarily conserved 함 → D1-MSN 활성</li></ul><ul id="1422e869-bf9d-8089-8c98-f28fdd37e675" class="bulleted-list"><li style="list-style-type:disc"><strong>Collection of highly-validated enhancer-AAVs for the major striatal cell types.</strong></li></ul><h3 id="1422e869-bf9d-8036-a70d-dfd34b0eeefd" class="">Topic 2: Disease-context application</h3><ul id="1422e869-bf9d-804f-af58-faefeffdcd2d" class="bulleted-list"><li style="list-style-type:disc">Dravet syndrom → type of epilepsy caused by SCN1A haploinsufficiency.<ul id="1422e869-bf9d-8152-ad4b-ce65b1a53703" class="bulleted-list"><li style="list-style-type:circle">Inhibitory neurons are specifically dysfunctional</li></ul><ul id="1422e869-bf9d-81f8-95ad-d5a63fbc3d65" class="bulleted-list"><li style="list-style-type:circle">너무 excited되는 것이 특징.</li></ul></li></ul><ul id="1422e869-bf9d-80ec-81d1-efa847eb2d19" class="bulleted-list"><li style="list-style-type:disc">PVALB, SST deletion → seizure and mortality</li></ul><ul id="1422e869-bf9d-803d-8620-eb3fac28e1d5" class="bulleted-list"><li style="list-style-type:disc">AAV 활용방안 → SCN1A gene replacement. </li></ul><ul id="1422e869-bf9d-8003-81be-fda41b43a235" class="bulleted-list"><li style="list-style-type:disc">Inhibitory neuron target은 매우 성공적으로 됐음. 그러면 이러한 therapy가 실제로 work하나?<ul id="1422e869-bf9d-81c3-b164-f3232973af52" class="bulleted-list"><li style="list-style-type:circle">Dravet mice → 100% rescue. </li></ul><ul id="1422e869-bf9d-81ed-a0b2-ffc00fd6da46" class="bulleted-list"><li style="list-style-type:circle">Seizure도 많이 줄어듦</li></ul><ul id="1422e869-bf9d-81c9-ab2f-df5445e9cad9" class="bulleted-list"><li style="list-style-type:circle">이런 therapy 적용할 때 target circuit을 정확히 타겟하는 것이 매우 중요함. (safe 위해서도)</li></ul></li></ul><ul id="1422e869-bf9d-8070-b2fb-ed468d14a523" class="bulleted-list"><li style="list-style-type:disc"><strong>Enhancer-AAV가 brain function 연구와 neurological disorder threatment target을 연구하는데 매우 유용한 tool이 될 것</strong></li></ul><figure id="1422e869-bf9d-80cc-9436-f17130598070" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%2010.png"><img style="width:645.9921875px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%2010.png"/></a></figure><h3 id="1422e869-bf9d-80a5-976f-ee6888222fbe" class="">QnA.</h3><ul id="1422e869-bf9d-80fd-af62-f4a0b4ca6a13" class="bulleted-list"><li style="list-style-type:disc">Enhancer effect가 언제까지 유지되는지?<ul id="1422e869-bf9d-81b9-a6a2-c00a38445377" class="bulleted-list"><li style="list-style-type:circle">1년내로 좀 내려가는데 많이는 아니고… enhancer마다 다르긴 한데 주목해야말 포인트임.</li></ul></li></ul><ul id="1422e869-bf9d-8048-af9b-f5d8f3b48b51" class="bulleted-list"><li style="list-style-type:disc">Other capsid platform도 사용해봤는지?</li></ul><ul id="1422e869-bf9d-802f-861a-d8c1a5bf1524" class="bulleted-list"><li style="list-style-type:disc">:Lentivirus는 사용해봤는지? In vitro로 AAV는 work하지 않았음.<ul id="1422e869-bf9d-81a3-91fa-f5f806a2d4ca" class="bulleted-list"><li style="list-style-type:circle">agnostic to viral tools.. .다른 거에 영향받는것같은데. insertion site같은… strong enhancer이고 Robust하면 잘 work하겠지만… 다른 플랫폼은 다 open인것같다.</li></ul></li></ul><p id="1422e869-bf9d-803b-bb9e-ce3d7e4a16d3" class="">
+</p><h2 id="1422e869-bf9d-80d1-976c-ee2b7f9fa4aa" class="">4) Spatially resolved single-cell genomics &amp; cell atlas of the brain</h2><p id="1422e869-bf9d-8071-82ba-f08bb30df86f" class="">Xiaowei Zhuang, Harvard University → VIZGEN이라는 회사의 co-founder이기도 함.<div class="indented"><ul id="1422e869-bf9d-817d-b19b-ebecbe5d75da" class="bulleted-list"><li style="list-style-type:disc">VIzgen이 MERFISH, MERSCOPE 기술을 개발 &amp; 주력으로 하는 회사다</li></ul><ul id="1422e869-bf9d-81b7-9042-d9f7591ec1f3" class="bulleted-list"><li style="list-style-type:disc">양질의 데이터를 많이 만들어낼 수 있는 이유가 있었다..</li></ul></div></p><ul id="1422e869-bf9d-803f-83bd-eb7377beb81c" class="bulleted-list"><li style="list-style-type:disc">Spatial → Molecular / cellular architecture of the brain 연구에 어떻게 활용될 수 있을 것인가.</li></ul><ul id="1422e869-bf9d-80ff-9fff-fd3463114851" class="bulleted-list"><li style="list-style-type:disc">MERFISH: measure many genes simultaneously. <ul id="1422e869-bf9d-80eb-8b51-e84f205355df" class="bulleted-list"><li style="list-style-type:circle">Combinatorial labeling of oligo probes</li></ul><ul id="1422e869-bf9d-8068-ae28-f40b33e3bccd" class="bulleted-list"><li style="list-style-type:circle">Scalability. 몇번 round 안돌아도 엄청 많은 유전자들 측정 가능하다. </li></ul><ul id="1422e869-bf9d-8002-af3b-e4473b0f7881" class="bulleted-list"><li style="list-style-type:circle">Error detection &amp; correction → High accuracy.</li></ul></li></ul><ul id="1422e869-bf9d-8039-8fdc-fc0c4f3ab019" class="bulleted-list"><li style="list-style-type:disc">10년 전에도 10,050 유전자를 측정이 가능했다.</li></ul><ul id="1422e869-bf9d-809c-b30c-e9982da2bfa5" class="bulleted-list"><li style="list-style-type:disc"><strong>Spatial distribution of RNAs inside the cells.</strong></li></ul><ul id="1422e869-bf9d-80ab-a178-e5badef9bc4a" class="bulleted-list"><li style="list-style-type:disc"><strong>MERFISH → 3D genome organization</strong>, single-cell epigenomics로도 확장.<figure id="1422e869-bf9d-8002-b3f6-c56e63de156b" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%2011.png"><img style="width:586.9921875px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%2011.png"/></a></figure><ul id="1422e869-bf9d-80dd-81bd-c121f5d3d7dc" class="bulleted-list"><li style="list-style-type:circle">Localize chromatin loci.</li></ul><ul id="1422e869-bf9d-80ba-a5b4-dc388f7139a2" class="bulleted-list"><li style="list-style-type:circle">Multimodal. </li></ul><ul id="1422e869-bf9d-80c6-86e2-f5b784d99411" class="bulleted-list"><li style="list-style-type:circle">Epigenetic → gene regulation에 중요. CUT&amp;TAG + MERFISH.</li></ul></li></ul><ul id="1422e869-bf9d-8070-8fa5-f615ddcbe99d" class="bulleted-list"><li style="list-style-type:disc">Mouse brain atlas based on spatial techniques.<ul id="1422e869-bf9d-8127-9605-e1e2519d9dd3" class="bulleted-list"><li style="list-style-type:circle">Zhang et al., Nature (2024)</li></ul><ul id="1422e869-bf9d-8018-a5f4-ecb6ad28482d" class="bulleted-list"><li style="list-style-type:circle">데이터를 계속 share하고, collaborate하면서 전체 brain을 아우르고자 노력한다.</li></ul></li></ul><ul id="1422e869-bf9d-8034-b2d5-fe2f8fe53eb7" class="bulleted-list"><li style="list-style-type:disc">DNA MERFISH → 3D genome까지.<ul id="1422e869-bf9d-802e-a7bd-d55f0f6435ae" class="bulleted-list"><li style="list-style-type:circle">Wide spectrum of differences in 3D-genome organization in different cell types. </li></ul><ul id="1422e869-bf9d-808d-b692-e3d3c4c0d92c" class="bulleted-list"><li style="list-style-type:circle">MeCP2 → rett syndrome. methylated DNA binding protein. </li></ul><figure id="1422e869-bf9d-8080-9733-ce2dc81e8617" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%2012.png"><img style="width:586.9921875px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%2012.png"/></a></figure></li></ul><ul id="1422e869-bf9d-802d-aa2d-fab94453c42f" class="bulleted-list"><li style="list-style-type:disc">MERFISH 데이터를 scRNA-seq과 integrate 가능 → 지금 보니까 batch도 거의 없고 수율도 좋은 것 같다. scRNA-seq이랑 cell 양 거의 비슷해보임. 우리도 atlas할 때 MERFISH 확보해서 같이 활용해볼 수 있을것같음.<ul id="1422e869-bf9d-81b2-9888-c7f745d600bd" class="bulleted-list"><li style="list-style-type:circle">Visium보다 MERFISH가 resolution이 훨배 좋아서 쓰면 진짜로 좋겠다..</li></ul><ul id="1422e869-bf9d-805b-a404-d5ce416ec032" class="bulleted-list"><li style="list-style-type:circle">de novo annotation을 안하려고 함. community의 방식을 따라가고자 함. 따라서 Label transfer 방식을 사용하였음.</li></ul></li></ul><ul id="1422e869-bf9d-80cb-baec-c021f1564d7d" class="bulleted-list"><li style="list-style-type:disc">Cell-cell interactions: from somtic contatc, paracrine singaling or short-range interactions<ul id="1422e869-bf9d-81c7-ae80-eb58b556467b" class="bulleted-list"><li style="list-style-type:circle">soma contact, proximity 기반으로 random chance보다 높은 빈도로 나타나는 interaction 추정</li></ul></li></ul><ul id="1422e869-bf9d-8002-aebc-dbef1ee2fca2" class="bulleted-list"><li style="list-style-type:disc">Human cortex가 mouse와 비교해서 neuron ↔ glial interaction이 훨씬 많이 나타남<ul id="1422e869-bf9d-8182-b848-e15ca8d0572f" class="bulleted-list"><li style="list-style-type:circle">특히, oligodendrocytes ↔ inhibitory neuron 간 interaction이 두드러짐</li></ul><ul id="1422e869-bf9d-8165-9a52-c714d309b437" class="bulleted-list"><li style="list-style-type:circle">Oligodendrocytes energy → neuron 전달</li></ul><ul id="1422e869-bf9d-81b5-b205-d8370ee44cd3" class="bulleted-list"><li style="list-style-type:circle">Microglia ↔ Excitatory neuron 간 interaction도 human cortex에서 눈에 띄게 enrichment 있음 (Fang et al, Science, 2023)</li></ul></li></ul><h3 id="1422e869-bf9d-803f-9120-c3fe3ae5429e" class="">Cell type specific 3D genome genome organization (<a href="https://www.biorxiv.org/content/10.1101/2023.12.04.570024v1">Liu et al., bioRxiv 2023</a>)</h3><ul id="1422e869-bf9d-80a0-899b-f6d4c78b4738" class="bulleted-list"><li style="list-style-type:disc">RNA- and DNA MERFISH 통합</li></ul><ul id="1422e869-bf9d-807d-b7f3-d60e88c94c96" class="bulleted-list"><li style="list-style-type:disc">MeCP2 → active-inative chromatin segreation and regulate transcirption in a nuclear-radial-position and cell-type dependent manner<ul id="1422e869-bf9d-8141-986a-f1796dad6eb4" class="bulleted-list"><li style="list-style-type:circle">Ratt syndrome</li></ul><ul id="1422e869-bf9d-8157-9fb0-e798acbd33fd" class="bulleted-list"><li style="list-style-type:circle">MeCP2 → 어떻게 다른 유전자들을 이 유전자가 down regulation 시키는지 잘 모름</li></ul></li></ul><ul id="1422e869-bf9d-80e1-921d-c382a0c7274b" class="bulleted-list"><li style="list-style-type:disc">MeCP2 KO → L2/3 IT에서 inactive 상태가 늘어났고, 각 cell type 별로 radial position을 neuclar interior → neuclear periphery에서 어떻게 변화하는지 봤는데 interior보다 neuclear periphery 쪽에 더 많이 위치하게 됨 <p id="1422e869-bf9d-8151-a68a-cf1e6a9f2a63" class="">→ 3D 구조를 접지 않고 퍼져 있다는 거니까 (unfolded 상태) inactivation 상태인 것이 더 많아졌다라는 의미?</p></li></ul><ul id="1422e869-bf9d-807a-b5a9-ecae43ea03f9" class="bulleted-list"><li style="list-style-type:disc">MERFISH + genetic variation → Genetic variation, protein variation을 준 다음 MERFISH 관찰<ul id="1422e869-bf9d-8110-bf9e-c9aac96b0bb3" class="bulleted-list"><li style="list-style-type:circle">Genotype ↔ Phenotype</li></ul><ul id="1422e869-bf9d-817b-be21-ffc87999c211" class="bulleted-list"><li style="list-style-type:circle">RNA sequencing과 imaging을 같이</li></ul></li></ul><ul id="1422e869-bf9d-8059-99ae-e8304ee3e10a" class="bulleted-list"><li style="list-style-type:disc">Perturbations. CRISPR. 핵심 개념.</li></ul><ul id="1422e869-bf9d-801d-8e79-cb22e0e355fe" class="bulleted-list"><li style="list-style-type:disc">Genome-wide perturbation in single sample. See the phenotype. Lot of predictions of molecular mechanisms. Lots of phenotypes → imaging을 더하기. </li></ul><ul id="1422e869-bf9d-8027-8a1b-d3e7f1f1c7c7" class="bulleted-list"><li style="list-style-type:disc"><strong>Variety of interesting phenotypes → which particular guide RNA did this particular phenotype received?</strong><ul id="1422e869-bf9d-80b2-b2fe-e0ebcbe69a1f" class="bulleted-list"><li style="list-style-type:circle"><strong>MERFISH → Genetic perturbation을 read out. </strong><figure id="1422e869-bf9d-804f-8a66-f9c73b1a1690" class="image"><a href="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%2013.png"><img style="width:558.984375px" src="Session%203%20From%20Atlassing%20to%20therapy%2013a2e869bf9d801b8f90fc1e987c46e7/image%2013.png"/></a></figure></li></ul></li></ul><h3 id="1422e869-bf9d-80cb-bef7-c6e359a4293d" class="">QnA</h3><ul id="1422e869-bf9d-8073-86a1-eef1efeaac48" class="bulleted-list"><li style="list-style-type:disc">3D genome에서 cell type prediction<ul id="1422e869-bf9d-8190-9bb8-cfd908a696b9" class="bulleted-list"><li style="list-style-type:circle">chromatin accessibility</li></ul><ul id="1422e869-bf9d-814d-970e-f741259e9224" class="bulleted-list"><li style="list-style-type:circle">AI가 답인가</li></ul></li></ul><ul id="1422e869-bf9d-80ed-87c6-c5054903bea3" class="bulleted-list"><li style="list-style-type:disc">MeCP2 function이 development에 따라 어떻게 달라지는지에 대해 물어본 듯?</li></ul><h2 id="1422e869-bf9d-8070-99ab-c5c4af33a4db" class="">5) Modeling and repairing the human brain with stem cells</h2><p id="1422e869-bf9d-808d-b9a3-e90de4c48b0f" class=""><strong><a href="https://www.vibconferences.be/speaker/agnete-kirkeby">Agnete Kirkeby</a></strong><strong>, </strong><em>Novo Nordisk Foundation Center for Stem Cell Medicine (reNEW), University of Copenhagen, DK</em></p><p id="1422e869-bf9d-8089-9190-e2afb4a9165d" class="">여담) 거의 모든 연사분들이 발표하는 결과마다 해당 연구를 한 사람들을 talented people/handsome people~ 하면서 한 명씩 다정하게 소개하는 것이 좋게 느껴짐! 애정이 느껴진다랄까</p><ul id="1422e869-bf9d-8063-ad89-d6c6649f433c" class="bulleted-list"><li style="list-style-type:disc">MiSTR models</li></ul><ul id="1422e869-bf9d-80bd-bbb0-ca4093c043e3" class="bulleted-list"><li style="list-style-type:disc">과거에는 neuralisation 실험할 때 neuralisation → patterning 순으로 과정이 진행됐는데, 새로운 protocol은 neuralisation&amp;patterning을 동시에 해서 볼 수 있음</li></ul><h3 id="1422e869-bf9d-80ba-a491-fbd929743b17" class="">Developing cell therapy for Parkinson’s disease</h3><ul id="1422e869-bf9d-80bf-b992-dd2823de495b" class="bulleted-list"><li style="list-style-type:disc">Substantia nigra의 dopamine neurons이 문제 → dopamine neuron replacement가 therapy 도움될 것</li></ul><ul id="1422e869-bf9d-80b4-a173-ebca0c50d5d2" class="bulleted-list"><li style="list-style-type:disc">Mini pig를 가지고 dopamine neuron 기능을 validation 함 (오늘도 불쌍한 pig..)<ul id="1422e869-bf9d-81eb-8522-c8d18cec8f15" class="bulleted-list"><li style="list-style-type:circle">DA neuron을 심었더니 dopamine 분비 늘어남</li></ul></li></ul><ul id="1422e869-bf9d-8084-b9b3-f599a284c866" class="bulleted-list"><li style="list-style-type:disc">PD+L-DOPA → non-DA neuron이 더해져서 neurotransmitter 분비 과해지면 involuntary movement 야기<ul id="1422e869-bf9d-814a-91b5-e6293de69486" class="bulleted-list"><li style="list-style-type:circle">L-DOPA 유도 줄였더니 호전됨</li></ul><ul id="1422e869-bf9d-81fb-9ba8-ee0d15e6d04a" class="bulleted-list"><li style="list-style-type:circle">Dopamine neuron 이식이 과한 dopamine 재흡수도 돕는다는 건가</li></ul></li></ul><ul id="1422e869-bf9d-8010-a5c4-c448da8ad913" class="bulleted-list"><li style="list-style-type:disc">Stem cell, cell transplantation 치료라는 개념이 신기하구만..</li></ul><h3 id="1422e869-bf9d-8089-a83f-f4461f11805f" class="">Where are we now with hPSC-based trials?</h3><ul id="1422e869-bf9d-8023-9e7a-f2671191bfef" class="bulleted-list"><li style="list-style-type:disc">hPSC trials는 매년 증가하고 있음<ul id="1422e869-bf9d-8141-b867-e60d59966267" class="bulleted-list"><li style="list-style-type:circle">CNS는 16% 정도</li></ul><ul id="1422e869-bf9d-8124-b524-f00fffd56b16" class="bulleted-list"><li style="list-style-type:circle">24개 시도 중에서도 절반은 Parkinson’s disease에서 DA 타겟하는 거</li></ul><ul id="1422e869-bf9d-8190-9f0f-f83837bc3a1a" class="bulleted-list"><li style="list-style-type:circle">거의 대부분 CNS에서는 neurodegenerative disorders나 stroke 같은 질환에서 시도되고 있음<ul id="1422e869-bf9d-81a1-b760-d9cf22a705c7" class="bulleted-list"><li style="list-style-type:square">Neurodevelopmental, psychiatric 분야는 아직 X → target이 명확하지 않아서 일까</li></ul></li></ul></li></ul><ul id="1422e869-bf9d-809a-8085-e0f73cab6c0f" class="bulleted-list"><li style="list-style-type:disc">Epilepsy에서 interneuron transplantation하는 연구 진행 중<ul id="1422e869-bf9d-8118-990f-df8c310c5db5" class="bulleted-list"><li style="list-style-type:circle">Seizure 감소 효과 있었음</li></ul></li></ul><ul id="1422e869-bf9d-8022-8804-dc7b059147ee" class="bulleted-list"><li style="list-style-type:disc">What’s next?<ul id="1422e869-bf9d-8145-becb-c996b28c01ec" class="bulleted-list"><li style="list-style-type:circle">Basal forebrain cholinergic neuron → future target</li></ul><ul id="1422e869-bf9d-81a3-9755-fec780746d78" class="bulleted-list"><li style="list-style-type:circle">dementia with Lewy bodies (DLB), PD with dementia (PDD) 치료에 효과적일 것으로 기대</li></ul></li></ul><h3 id="1422e869-bf9d-808a-97d1-db5f3fe72e9c" class="">QnA</h3><h2 id="1422e869-bf9d-805c-8fef-e1c02b017fd2" class="">Selected poster: TREM2-dependence of Microglial Activation in Alzheimer&#x27;s Disease</h2><p id="1422e869-bf9d-8043-bc2c-f70cf2c9d377" class=""><strong>Maggie Crow - </strong><em>Genentech, Inc., US</em></p><ul id="1422e869-bf9d-8092-a421-f7a816519d84" class="bulleted-list"><li style="list-style-type:disc">AD genetics → microglia가 중요하다</li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
