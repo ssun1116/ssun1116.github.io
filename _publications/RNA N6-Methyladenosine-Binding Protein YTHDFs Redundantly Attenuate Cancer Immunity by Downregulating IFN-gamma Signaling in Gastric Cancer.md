@@ -1,7 +1,7 @@
 ---
 title: "RNA N6-Methyladenosine-Binding Protein YTHDFs Redundantly Attenuate Cancer Immunity by Downregulating IFN-gamma Signaling in Gastric Cancer"
 collection: publications
-category: manuscripts
+category: co-author
 siteurl: 'https://doi.org/10.1002/advs.202410806'
 date: 2024-11-25
 venue: 'Advanced Science'
