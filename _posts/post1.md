@@ -8,4 +8,4 @@ tags:
   - Python
 ---
 
-Learn about the basics of computer usage and Python programming, including file systems, operating systems, and the differences between GUI and CLI environments. Explore Python as a platform-independent, object-oriented, and dynamically-typed interpreter language. Discover its simplicity, extensive libraries, and versatility, along with how to set up Python coding environments using tools like Anaconda.
+Learn the basics of computer usage and Python programming, including file systems, GUI vs. CLI, and setting up coding environments like Anaconda. Explore Python as a versatile, platform-independent, and easy-to-use language.
