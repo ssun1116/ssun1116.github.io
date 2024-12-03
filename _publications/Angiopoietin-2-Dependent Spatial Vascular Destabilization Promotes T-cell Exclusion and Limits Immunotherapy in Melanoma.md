@@ -1,7 +1,7 @@
 ---
 title: "Angiopoietin-2-Dependent Spatial Vascular Destabilization Promotes T-cell Exclusion and Limits Immunotherapy in Melanoma"
 collection: publications
-category: manuscripts
+category: co-author-key
 siteurl: 'https://doi.org/10.1158/0008-5472.CAN-22-2838'
 date: 2023-06-15
 venue: 'Cancer Research'
